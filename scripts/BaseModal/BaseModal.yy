@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"BaseModal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BaseModal",
+  "parent":{
+    "name":"Modal",
+    "path":"folders/PoyoGUI/Modal.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

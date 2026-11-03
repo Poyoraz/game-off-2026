@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"struct_get_existing_from_hash",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"struct_get_existing_from_hash",
+  "parent":{
+    "name":"Library",
+    "path":"folders/PoyoGUI/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"BaseRoom",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BaseRoom",
+  "parent":{
+    "name":"PoyoGUI",
+    "path":"folders/PoyoGUI.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

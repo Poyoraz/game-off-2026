@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_listener_exists",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_listener_exists",
+  "parent":{
+    "name":"Listeners",
+    "path":"folders/PoyoGUI/Listeners.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

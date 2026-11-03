@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"resolve_size",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"resolve_size",
+  "parent":{
+    "name":"Library",
+    "path":"folders/PoyoGUI/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

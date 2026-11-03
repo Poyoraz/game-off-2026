@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ListNode",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ListNode",
+  "parent":{
+    "name":"Nodes",
+    "path":"folders/PoyoGUI/Nodes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"MajorGUI_Core",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"MajorGUI_Core",
+  "parent":{
+    "name":"MajorGUI",
+    "path":"folders/PoyoGUI/Addons/MajorGUI.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

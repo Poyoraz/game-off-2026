@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"hover_handlers",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"hover_handlers",
+  "parent":{
+    "name":"Library",
+    "path":"folders/PoyoGUI/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

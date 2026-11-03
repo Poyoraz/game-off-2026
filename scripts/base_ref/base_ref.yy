@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"base_ref",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"base_ref",
+  "parent":{
+    "name":"Library",
+    "path":"folders/PoyoGUI/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

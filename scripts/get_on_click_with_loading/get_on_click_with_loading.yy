@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"get_on_click_with_loading",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_on_click_with_loading",
+  "parent":{
+    "name":"PoyoGUI",
+    "path":"folders/PoyoGUI.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"gpu_set_over_non_empty",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"gpu_set_over_non_empty",
+  "parent":{
+    "name":"Library",
+    "path":"folders/PoyoGUI/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

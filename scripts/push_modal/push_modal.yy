@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"push_modal",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"push_modal",
+  "parent":{
+    "name":"Modal",
+    "path":"folders/PoyoGUI/Modal.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Listener",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Listener",
+  "parent":{
+    "name":"Listeners",
+    "path":"folders/PoyoGUI/Listeners.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
