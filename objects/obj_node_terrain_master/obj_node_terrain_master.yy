@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"obj_terrain_master",
+  "%Name":"obj_node_terrain_master",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -9,11 +9,11 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":50,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_terrain_master",
+  "name":"obj_node_terrain_master",
   "overriddenProperties":[],
   "parent":{
-    "name":"Terrain",
-    "path":"folders/Terrain.yy",
+    "name":"NodeTerrain",
+    "path":"folders/NodeTerrain.yy",
   },
   "parentObjectId":null,
   "persistent":false,

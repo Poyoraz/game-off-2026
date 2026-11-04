@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Terrain",
-    "path":"folders/Terrain.yy",
+    "name":"NodeTerrain",
+    "path":"folders/NodeTerrain.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

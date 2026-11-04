@@ -8,8 +8,8 @@
   "name":"obj_terrain_node",
   "overriddenProperties":[],
   "parent":{
-    "name":"Terrain",
-    "path":"folders/Terrain.yy",
+    "name":"NodeTerrain",
+    "path":"folders/NodeTerrain.yy",
   },
   "parentObjectId":null,
   "persistent":false,
