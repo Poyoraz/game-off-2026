@@ -29,7 +29,22 @@ if(v_dir != 0) {
 			obj_collidable, 0, 1
 		)
 		
-		if(colliding) break
+		if(instance_exists(colliding)) {
+			if(colliding.weight == infinity) {
+				vertical_speed = 0
+				
+				break
+			}
+			
+			var combined_momentum = get_momentum(true) + colliding.get_momentum(true)
+			vertical_speed = 0
+			
+			transmit_momentum(combined_momentum / 2, true)
+			
+			colliding.transmit_momentum(combined_momentum / 2, true)
+				
+			break
+		}
 		
 		_movement += v_dir
 		
@@ -45,21 +60,69 @@ if(h_dir != 0) {
 	
 	var _movement = 0
 	
+	var _drag = air_drag
+	
+	if(bottom_collision && !unaffected_by_friction) {
+		var _item = collision_line(
+			bbox_left + 1, 
+			bbox_bottom + 2, 
+			bbox_right - 1, 
+			bbox_bottom + 2, 
+			obj_collidable, 0, 1
+		)
+		
+		if(instance_exists(_item)) {
+			_drag += weight * friction_multiplier * 5
+		}
+	}
+	
+	horizontal_speed = max(0, abs(_hsp) - _drag) * h_dir
+	
 	repeat (min(abs(_hsp), horizontal_speed_max)) {	
 		var colliding = collision_line(
 			__h_side + _movement, 
-			bbox_top, 
+			bbox_top + 1, 
 			__h_side + _movement, 
-			bbox_bottom, 
+			bbox_bottom - 1, 
 			obj_collidable, 
 			0, 
 			1
 		)
 		
-		if(colliding) break
+		if(instance_exists(colliding)) {
+			if(colliding.weight == infinity) {
+				horizontal_speed = 0
+				
+				break
+			}
+			
+			var combined_momentum = get_momentum() + colliding.get_momentum()
+			horizontal_speed = 0
+			
+			transmit_momentum(combined_momentum / 2)
+			colliding.transmit_momentum(combined_momentum / 2)
+				
+			break
+		}
 		
 		_movement += h_dir
 		
 		x += h_dir
+	}
+	
+	if(top_collision) {
+		var _item = collision_line(
+			bbox_left + 1, 
+			bbox_top - 2, 
+			bbox_right - 1, 
+			bbox_top - 2, 
+			obj_collidable, 0, 1
+		)
+		
+		if(instance_exists(_item)) {
+			_item.horizontal_speed = h_dir == 1
+				? max(_hsp, _item.horizontal_speed)
+				: min(_hsp, _item.horizontal_speed)
+		}
 	}
 }

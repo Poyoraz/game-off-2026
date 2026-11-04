@@ -6,7 +6,9 @@
   ],
   "managed":true,
   "name":"obj_physics_item_that_jumps",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},"propertyId":{"name":"weight","path":"objects/obj_collidable/obj_collidable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+  ],
   "parent":{
     "name":"BlockTerrain",
     "path":"folders/BlockTerrain.yy",

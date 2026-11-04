@@ -32,6 +32,8 @@
     {"$GMObjectProperty":"v2","%Name":"horizontal_speed","filters":[],"listItems":[],"multiselect":false,"name":"horizontal_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"grav","filters":[],"listItems":[],"multiselect":false,"name":"grav","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1.0","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"horizontal_grav","filters":[],"listItems":[],"multiselect":false,"name":"horizontal_grav","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"weight","filters":[],"listItems":[],"multiselect":false,"name":"weight","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"infinity","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"friction_multiplier","filters":[],"listItems":[],"multiselect":false,"name":"friction_multiplier","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.2","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
