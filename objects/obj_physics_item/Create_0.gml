@@ -7,9 +7,11 @@ transmit_momentum = method(self, function(momentum, vertical = false) {
 	var transferred_speed = (momentum/weight)// * 0.85
 	
 	if(vertical) {
-		vertical_speed += transferred_speed
+		if(abs(transferred_speed) > minimum_momentum_for_vertical_movement)
+			vertical_speed += transferred_speed
 	} else {
-		horizontal_speed += transferred_speed
+		if(abs(transferred_speed) > minimum_momentum_for_horizontal_movement)
+			horizontal_speed += transferred_speed
 	}
 })
 

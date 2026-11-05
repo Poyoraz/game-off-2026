@@ -4,7 +4,7 @@ if (!disable_controls) {
 		
 	// EITHER OR
 	if(!held_right ^^ !held_left) {
-		var input_sign = keyboard_check(ord("D")) - keyboard_check(ord("A")),
+		var input_sign = held_right - held_left,
 			h_dir = sign(horizontal_speed),
 			h_abs = abs(horizontal_speed)
 			
@@ -12,10 +12,8 @@ if (!disable_controls) {
 		
 		if(h_abs < dash_max && input_sign == h_dir) {
 			horizontal_speed += input_sign * 5
-			show_debug_message("add speed")
 		} else if(input_sign != h_dir && bottom_collision) {
 			horizontal_speed = input_sign * 5
-			show_debug_message("change speed")
 		} else if(h_abs < dash_max * 1.2 && !bottom_collision) {
 			horizontal_speed += input_sign * max(5, h_abs/5)
 		}

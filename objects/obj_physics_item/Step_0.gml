@@ -50,9 +50,15 @@ if(v_dir != 0) {
 			break
 		}
 		
+		if(v_dir == 1 ? max_y < y + v_dir : min_y > y + v_dir) {
+			vertical_speed = 0
+			break
+		}
+		
 		_movement += v_dir
 		
 		y += v_dir
+		
 	}
 }
 
@@ -106,6 +112,11 @@ if(h_dir != 0) {
 			transmit_momentum(combined_momentum / 2)
 			colliding.transmit_momentum(combined_momentum / 2)
 				
+			break
+		}
+		
+		if(h_dir == 1 ? max_x < x + h_dir : min_x > x + h_dir) {
+			horizontal_speed = 0
 			break
 		}
 		

@@ -1,9 +1,9 @@
 {
   "FolderOrderSettings":[
     {"name":"BlockTerrain","order":4,"path":"folders/BlockTerrain.yy",},
-    {"name":"Player","order":6,"path":"folders/Player.yy",},
     {"name":"Library","order":5,"path":"folders/Library.yy",},
     {"name":"NodeTerrain","order":2,"path":"folders/NodeTerrain.yy",},
+    {"name":"Player","order":6,"path":"folders/Player.yy",},
     {"name":"PoyoGUI","order":1,"path":"folders/PoyoGUI.yy",},
     {"name":"Addons","order":1,"path":"folders/PoyoGUI/Addons.yy",},
     {"name":"MajorGUI","order":1,"path":"folders/PoyoGUI/Addons/MajorGUI.yy",},
@@ -42,6 +42,8 @@
     {"name":"obj_menu","order":9,"path":"objects/obj_menu/obj_menu.yy",},
     {"name":"obj_node_terrain_master","order":1,"path":"objects/obj_node_terrain_master/obj_node_terrain_master.yy",},
     {"name":"obj_physics_item_that_jumps","order":5,"path":"objects/obj_physics_item_that_jumps/obj_physics_item_that_jumps.yy",},
+    {"name":"room_ground_test","order":8,"path":"rooms/room_ground_test/room_ground_test.yy",},
+    {"name":"room_wall_test","order":7,"path":"rooms/room_wall_test/room_wall_test.yy",},
     {"name":"__scribble_class_event","order":1,"path":"scripts/__scribble_class_event/__scribble_class_event.yy",},
     {"name":"__scribble_class_font","order":2,"path":"scripts/__scribble_class_font/__scribble_class_font.yy",},
     {"name":"__scribble_class_line","order":3,"path":"scripts/__scribble_class_line/__scribble_class_line.yy",},

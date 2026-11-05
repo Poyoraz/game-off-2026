@@ -14,5 +14,7 @@ air_drag = 0
 
 alarm[0] = 10
 
+var _speed = _has_valid_grapple ? 60 : 35
+
 horizontal_speed = lengthdir_x(35, _dir)
 vertical_speed = lengthdir_y(35, _dir)
