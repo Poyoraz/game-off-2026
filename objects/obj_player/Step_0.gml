@@ -16,7 +16,7 @@ if (!disable_controls) {
 		} else if(input_sign != h_dir && bottom_collision) {
 			horizontal_speed = input_sign * 5
 			show_debug_message("change speed")
-		} else if(h_abs < dash_max) {
+		} else if(h_abs < dash_max * 1.5 && !bottom_collision) {
 			horizontal_speed += input_sign * 5
 		}
 	}
