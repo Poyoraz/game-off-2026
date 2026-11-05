@@ -236,6 +236,7 @@
     {"id":{"name":"shdSearchbox","path":"shaders/shdSearchbox/shdSearchbox.yy",},},
     {"id":{"name":"shdSearchbox2","path":"shaders/shdSearchbox2/shdSearchbox2.yy",},},
     {"id":{"name":"scribble_fallback_bulletpoint","path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},},
+    {"id":{"name":"spr_arrow","path":"sprites/spr_arrow/spr_arrow.yy",},},
     {"id":{"name":"spr_block","path":"sprites/spr_block/spr_block.yy",},},
     {"id":{"name":"spr_marker","path":"sprites/spr_marker/spr_marker.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},

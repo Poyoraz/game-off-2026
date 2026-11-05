@@ -39,9 +39,9 @@ if(v_dir != 0) {
 			var combined_momentum = get_momentum(true) + colliding.get_momentum(true)
 			vertical_speed = 0
 			
-			transmit_momentum(combined_momentum / 2, true)
+			transmit_momentum(3 * combined_momentum / 8, true)
 			
-			colliding.transmit_momentum(combined_momentum / 2, true)
+			colliding.transmit_momentum(5 * combined_momentum / 8, true)
 				
 			break
 		}

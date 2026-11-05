@@ -193,6 +193,7 @@
     {"name":"__shd_scribble_bake_shadow","order":3,"path":"shaders/__shd_scribble_bake_shadow/__shd_scribble_bake_shadow.yy",},
     {"name":"shdSearchbox2","order":1,"path":"shaders/shdSearchbox2/shdSearchbox2.yy",},
     {"name":"scribble_fallback_bulletpoint","order":23,"path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},
+    {"name":"spr_arrow","order":6,"path":"sprites/spr_arrow/spr_arrow.yy",},
     {"name":"spr_block","order":1,"path":"sprites/spr_block/spr_block.yy",},
     {"name":"spr_marker","order":3,"path":"sprites/spr_marker/spr_marker.yy",},
     {"name":"spr_player","order":4,"path":"sprites/spr_player/spr_player.yy",},
