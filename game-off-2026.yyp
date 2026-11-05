@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"BlockTerrain","folderPath":"folders/BlockTerrain.yy","name":"BlockTerrain","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Library","folderPath":"folders/Library.yy","name":"Library","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"NodeTerrain","folderPath":"folders/NodeTerrain.yy","name":"NodeTerrain","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"PoyoGUI","folderPath":"folders/PoyoGUI.yy","name":"PoyoGUI","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Addons","folderPath":"folders/PoyoGUI/Addons.yy","name":"Addons","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -137,6 +138,7 @@
     {"id":{"name":"scr_add_listener","path":"scripts/scr_add_listener/scr_add_listener.yy",},},
     {"id":{"name":"scr_batch_remove_listeners","path":"scripts/scr_batch_remove_listeners/scr_batch_remove_listeners.yy",},},
     {"id":{"name":"scr_create_popup","path":"scripts/scr_create_popup/scr_create_popup.yy",},},
+    {"id":{"name":"scr_ease_value","path":"scripts/scr_ease_value/scr_ease_value.yy",},},
     {"id":{"name":"scr_emit_listener","path":"scripts/scr_emit_listener/scr_emit_listener.yy",},},
     {"id":{"name":"scr_listener_exists","path":"scripts/scr_listener_exists/scr_listener_exists.yy",},},
     {"id":{"name":"scr_remove_listener","path":"scripts/scr_remove_listener/scr_remove_listener.yy",},},

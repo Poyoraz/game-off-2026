@@ -39,7 +39,7 @@
     {"$GMObjectProperty":"v2","%Name":"vertical_speed_max","filters":[],"listItems":[],"multiselect":false,"name":"vertical_speed_max","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"50","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"horizontal_speed_max","filters":[],"listItems":[],"multiselect":false,"name":"horizontal_speed_max","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"50","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"unaffected_by_friction","filters":[],"listItems":[],"multiselect":false,"name":"unaffected_by_friction","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
-    {"$GMObjectProperty":"v2","%Name":"air_drag","filters":[],"listItems":[],"multiselect":false,"name":"air_drag","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"air_drag","filters":[],"listItems":[],"multiselect":false,"name":"air_drag","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.5","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -19,6 +19,10 @@ if(v_dir != 0) {
 	var __v_side = (v_dir == 1 ? bbox_bottom : bbox_top) + v_dir
 
 	var _movement = 0
+	
+	var _drag = air_drag
+	
+	vertical_speed = max(0, abs(_vsp) - _drag) * v_dir
 		
 	repeat (min(abs(_vsp), vertical_speed_max)) {	
 		var colliding = collision_line(
@@ -96,7 +100,7 @@ if(h_dir != 0) {
 				break
 			}
 			
-			var combined_momentum = get_momentum() + colliding.get_momentum()
+			var combined_momentum = get_momentum()
 			horizontal_speed = 0
 			
 			transmit_momentum(combined_momentum / 2)
@@ -119,10 +123,12 @@ if(h_dir != 0) {
 			obj_collidable, 0, 1
 		)
 		
+		var displacement = y - yprevious
+		
 		if(instance_exists(_item)) {
 			_item.horizontal_speed = h_dir == 1
-				? max(_hsp, _item.horizontal_speed)
-				: min(_hsp, _item.horizontal_speed)
+				? max(displacement, _item.horizontal_speed)
+				: min(displacement, _item.horizontal_speed)
 		}
 	}
 }

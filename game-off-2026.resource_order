@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[
     {"name":"BlockTerrain","order":4,"path":"folders/BlockTerrain.yy",},
+    {"name":"Library","order":5,"path":"folders/Library.yy",},
     {"name":"NodeTerrain","order":2,"path":"folders/NodeTerrain.yy",},
     {"name":"PoyoGUI","order":1,"path":"folders/PoyoGUI.yy",},
     {"name":"Addons","order":1,"path":"folders/PoyoGUI/Addons.yy",},
