@@ -19,8 +19,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},"propertyId":{"name":"friction_multiplier","path":"objects/obj_collidable/obj_collidable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.6",},
   ],
   "parent":{
-    "name":"BlockTerrain",
-    "path":"folders/BlockTerrain.yy",
+    "name":"Player",
+    "path":"folders/Player.yy",
   },
   "parentObjectId":{
     "name":"obj_physics_item",
