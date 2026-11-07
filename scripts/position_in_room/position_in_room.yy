@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"position_in_room",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"position_in_room",
+  "parent":{
+    "name":"Library",
+    "path":"folders/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

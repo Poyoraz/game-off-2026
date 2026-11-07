@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"get_angle_from_input",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_angle_from_input",
+  "parent":{
+    "name":"Library",
+    "path":"folders/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

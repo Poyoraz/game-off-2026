@@ -1,4 +1,4 @@
-if (!disable_controls) {
+if (!controls_disabled) {
 	var held_right = keyboard_check(ord("D")),
 		held_left = keyboard_check(ord("A"))
 		
@@ -22,7 +22,7 @@ if (!disable_controls) {
 			vertical_speed = scr_ease_value(
 				vertical_speed, 
 				5,
-				1 * (slide_effectiveness / max_slide_effectiveness)
+				max(1 * (slide_effectiveness / max_slide_effectiveness), 0)
 			)
 			
 			slide_effectiveness--
@@ -31,5 +31,7 @@ if (!disable_controls) {
 		horizontal_speed = scr_ease_value(horizontal_speed, 0, 5, true, 1)
 	}
 }
+
+if(!dashing) dash_cooldown--
 
 event_inherited()

@@ -11,6 +11,7 @@ stop_speed = function(contacted) {
 	if(contacted.object_index == obj_player) return false;
 
 	grappled = contacted
+	contacted.on_grapple_hook()
 	horizontal_speed = 0
 	vertical_speed = 0
 	
