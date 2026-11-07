@@ -261,8 +261,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"room_wall_test","path":"rooms/room_wall_test/room_wall_test.yy",},},
-    {"roomId":{"name":"room_ground_test","path":"rooms/room_ground_test/room_ground_test.yy",},},
     {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
+    {"roomId":{"name":"room_ground_test","path":"rooms/room_ground_test/room_ground_test.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

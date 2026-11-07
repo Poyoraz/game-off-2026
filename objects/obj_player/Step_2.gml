@@ -17,7 +17,7 @@ if(keyboard_check_pressed(vk_space)) {
 		vertical_speed = jump_height
 		coyote_timer = -1
 	} else if (left_collision || right_collision) {
-		vertical_speed = jump_height-10
+		vertical_speed = jump_height+5
 		horizontal_speed = 30*(left_collision-right_collision)
 	} else {
 		jump_buffer = max_jump_buffer
