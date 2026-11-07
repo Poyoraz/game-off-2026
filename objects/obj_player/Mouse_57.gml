@@ -8,10 +8,12 @@ var _dir = _has_valid_grapple
 	? point_direction(x, y, obj_hook.x, obj_hook.y)
 	: (floor((point_direction(x, y, mouse_x, mouse_y) + 22.5) / (360 / 8)) mod 8) * 45
 
+if(_has_valid_grapple) {
 x = obj_hook.x
 y = obj_hook.y
-
-if(_has_valid_grapple) instance_destroy(obj_hook)
+	
+instance_destroy(obj_hook)
+}
 
 //air_drag = 0
 coyote_timer = 0
