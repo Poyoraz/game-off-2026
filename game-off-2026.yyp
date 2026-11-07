@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"BlockTerrain","folderPath":"folders/BlockTerrain.yy","name":"BlockTerrain","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Enums","folderPath":"folders/Enums.yy","name":"Enums","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Library","folderPath":"folders/Library.yy","name":"Library","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"NodeTerrain","folderPath":"folders/NodeTerrain.yy","name":"NodeTerrain","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -229,6 +230,7 @@
     {"id":{"name":"string_width_scribble","path":"scripts/string_width_scribble/string_width_scribble.yy",},},
     {"id":{"name":"struct_get_existing_from_hash","path":"scripts/struct_get_existing_from_hash/struct_get_existing_from_hash.yy",},},
     {"id":{"name":"TextNode","path":"scripts/TextNode/TextNode.yy",},},
+    {"id":{"name":"TransmitMomentumType","path":"scripts/TransmitMomentumType/TransmitMomentumType.yy",},},
     {"id":{"name":"UseRef","path":"scripts/UseRef/UseRef.yy",},},
     {"id":{"name":"__shd_scribble_bake_effect_4dir","path":"shaders/__shd_scribble_bake_effect_4dir/__shd_scribble_bake_effect_4dir.yy",},},
     {"id":{"name":"__shd_scribble_bake_effect_8dir_2px","path":"shaders/__shd_scribble_bake_effect_8dir_2px/__shd_scribble_bake_effect_8dir_2px.yy",},},

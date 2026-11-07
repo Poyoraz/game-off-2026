@@ -1,4 +1,4 @@
-transmit_momentum = method(self, function(momentum, vertical = false) {
+transmit_momentum = method(self, function(momentum, vertical = false, type = TransmitMomentumType.COLLISION) {
 	
 })
 

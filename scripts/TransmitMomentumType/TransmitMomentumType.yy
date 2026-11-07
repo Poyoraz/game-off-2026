@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"TransmitMomentumType",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"TransmitMomentumType",
+  "parent":{
+    "name":"Enums",
+    "path":"folders/Enums.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

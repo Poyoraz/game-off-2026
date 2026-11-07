@@ -1,6 +1,7 @@
 {
   "FolderOrderSettings":[
     {"name":"BlockTerrain","order":4,"path":"folders/BlockTerrain.yy",},
+    {"name":"Enums","order":9,"path":"folders/Enums.yy",},
     {"name":"Library","order":5,"path":"folders/Library.yy",},
     {"name":"NodeTerrain","order":2,"path":"folders/NodeTerrain.yy",},
     {"name":"Player","order":6,"path":"folders/Player.yy",},

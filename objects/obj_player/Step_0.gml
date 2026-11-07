@@ -19,7 +19,13 @@ if (!disable_controls) {
 		}
 		
 		if (left_collision || right_collision) {
-			vertical_speed = scr_ease_value(vertical_speed, 5, 5, true, 1)	
+			vertical_speed = scr_ease_value(
+				vertical_speed, 
+				5,
+				1 * (slide_effectiveness / max_slide_effectiveness)
+			)
+			
+			slide_effectiveness--
 		}
 	} else if(bottom_collision) {
 		horizontal_speed = scr_ease_value(horizontal_speed, 0, 5, true, 1)

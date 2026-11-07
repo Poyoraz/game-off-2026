@@ -1,6 +1,7 @@
 #region VERTICAL SPEED
 
-vertical_speed += grav
+if(vertical_speed <= terminal_velocity && affected_by_gravity)
+	vertical_speed += grav
 
 #endregion
 
@@ -21,6 +22,10 @@ if(v_dir != 0) {
 	var _movement = 0
 	
 	var _drag = air_drag
+	
+	if(left_collision || right_collision) {
+		_drag += abs(_vsp) * 0.04
+	}
 	
 	vertical_speed = max(0, abs(_vsp) - _drag) * v_dir
 		

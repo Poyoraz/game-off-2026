@@ -6,7 +6,9 @@ if (bottom_collision && jump_buffer > 0) {
 	vertical_speed = jump_height-10
 	horizontal_speed = 30*(left_collision-right_collision)
 } else if(bottom_collision) {
+	// STANDING ON GROUND
 	coyote_timer = max_coyote_time
+	slide_effectiveness = max_slide_effectiveness
 } else {
 	coyote_timer--
 	jump_buffer--
