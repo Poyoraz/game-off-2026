@@ -17,6 +17,10 @@ if (!disable_controls) {
 		} else if(h_abs < dash_max * 1.2 && !bottom_collision) {
 			horizontal_speed += input_sign * max(5, h_abs/5)
 		}
+		
+		if (left_collision || right_collision) {
+			vertical_speed = scr_ease_value(vertical_speed, 5, 5, true, 1)	
+		}
 	} else if(bottom_collision) {
 		horizontal_speed = scr_ease_value(horizontal_speed, 0, 5, true, 1)
 	}

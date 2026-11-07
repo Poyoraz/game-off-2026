@@ -1,18 +1,23 @@
 event_inherited()
 
-if(bottom_collision) {
+if (bottom_collision && jump_buffer > 0) {
+	vertical_speed = jump_height
+} else if(bottom_collision) {
 	coyote_timer = max_coyote_time
 } else {
 	coyote_timer--
 	jump_buffer--
 }
 
-if(keyboard_check_direct(vk_space)) {
-	if ((bottom_collision && jump_buffer > 0) || coyote_timer > 0) {
+if(keyboard_check_pressed(vk_space)) {
+	if (coyote_timer > 0) {
 		vertical_speed = -35
 		coyote_timer = -1
+	} else if (left_collision || right_collision) {
+		vertical_speed = jump_height-10
+		horizontal_speed = 30*(left_collision-right_collision)
 	} else {
-		jump_buffer = 4
+		jump_buffer = max_jump_buffer
 	}
 }
 
