@@ -1,8 +1,9 @@
 event_inherited()
 
-coyote_time = 6
+max_coyote_time = 6
 
-grounded_timer = coyote_time
+coyote_timer = max_coyote_time
+jump_buffer = 4
 
 _orig_grav = grav
 _orig_drag = air_drag
