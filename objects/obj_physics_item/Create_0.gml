@@ -40,7 +40,7 @@ enable_air_drag = method(self, function() {
 	affected_by_airdrag = true
 })
 
-on_collide = method(self, function(collidee, vertical = true) {
+on_collide = method(self, function(collidee, vertical = false) {
 	var momentum = get_momentum(vertical)
 	if(vertical) {
 		vertical_speed = 0
@@ -67,10 +67,10 @@ on_grapple_pull = method(self, function(force, dir) {
 			? -sign(dsin(dir)) * pull_momentum  
 			: lengthdir_y(pull_momentum, dir)
 		
-	transmit_momentum(_h_pull)
-	transmit_momentum(_v_pull, true)
+	transmit_momentum(_h_pull, false, TransmitMomentumType.HOOK_PULL)
+	transmit_momentum(_v_pull, true, TransmitMomentumType.HOOK_PULL)
 })
 
 on_grapple_hook = method(self, function() {
-
+	return true
 })

@@ -2,6 +2,7 @@
   "FolderOrderSettings":[
     {"name":"BlockTerrain","order":4,"path":"folders/BlockTerrain.yy",},
     {"name":"Enums","order":9,"path":"folders/Enums.yy",},
+    {"name":"Enemies","order":10,"path":"folders/Enemies.yy",},
     {"name":"Library","order":5,"path":"folders/Library.yy",},
     {"name":"NodeTerrain","order":2,"path":"folders/NodeTerrain.yy",},
     {"name":"Player","order":6,"path":"folders/Player.yy",},
@@ -202,6 +203,7 @@
     {"name":"scribble_fallback_bulletpoint","order":23,"path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},
     {"name":"spr_arrow","order":6,"path":"sprites/spr_arrow/spr_arrow.yy",},
     {"name":"spr_block","order":1,"path":"sprites/spr_block/spr_block.yy",},
+    {"name":"spr_enemy","order":1,"path":"sprites/spr_enemy/spr_enemy.yy",},
     {"name":"spr_hook","order":3,"path":"sprites/spr_hook/spr_hook.yy",},
     {"name":"spr_marker","order":3,"path":"sprites/spr_marker/spr_marker.yy",},
     {"name":"spr_player","order":2,"path":"sprites/spr_player/spr_player.yy",},

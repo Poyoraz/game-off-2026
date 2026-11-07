@@ -9,9 +9,15 @@ speed = 0
 
 stop_speed = function(contacted) {
 	if(contacted.object_index == obj_player) return false;
+	
+	var result = contacted.on_grapple_hook()
+	
+	if(!result) {
+		instance_destroy()
+		return true
+	}
 
 	grappled = contacted
-	contacted.on_grapple_hook()
 	horizontal_speed = 0
 	vertical_speed = 0
 	
