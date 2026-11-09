@@ -73,6 +73,7 @@
     {"id":{"name":"obj_popup","path":"objects/obj_popup/obj_popup.yy",},},
     {"id":{"name":"obj_shockwave","path":"objects/obj_shockwave/obj_shockwave.yy",},},
     {"id":{"name":"obj_terrain_node","path":"objects/obj_terrain_node/obj_terrain_node.yy",},},
+    {"id":{"name":"room_base","path":"rooms/room_base/room_base.yy",},},
     {"id":{"name":"room_ground_test","path":"rooms/room_ground_test/room_ground_test.yy",},},
     {"id":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
     {"id":{"name":"room_wall_test","path":"rooms/room_wall_test/room_wall_test.yy",},},
@@ -291,6 +292,7 @@
     {"roomId":{"name":"room_ground_test","path":"rooms/room_ground_test/room_ground_test.yy",},},
     {"roomId":{"name":"room_wall_test","path":"rooms/room_wall_test/room_wall_test.yy",},},
     {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
+    {"roomId":{"name":"room_base","path":"rooms/room_base/room_base.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
