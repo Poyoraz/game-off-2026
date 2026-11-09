@@ -36,7 +36,7 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"max_hp","filters":[],"listItems":[],"multiselect":false,"name":"max_hp","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"200","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"pain_tolerance","filters":[],"listItems":[],"multiselect":false,"name":"pain_tolerance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"40","varDescription":"Damage threshold for the enemy to take damage","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"pain_tolerance","filters":[],"listItems":[],"multiselect":false,"name":"pain_tolerance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"35","varDescription":"Damage threshold for the enemy to take damage","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

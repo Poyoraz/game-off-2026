@@ -12,12 +12,12 @@ stop_speed = function(contacted) {
 	
 	var result = contacted.on_grapple_hook()
 	
-	if(!result) {
+	if(!instance_exists(result)) {
 		instance_destroy()
 		return true
 	}
 
-	grappled = contacted
+	grappled = result
 	horizontal_speed = 0
 	vertical_speed = 0
 	

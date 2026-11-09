@@ -14,7 +14,7 @@ if (bottom_collision && jump_buffer > 0) {
 	jump_buffer--
 }
 
-if(keyboard_check_pressed(vk_space)) {
+if(keyboard_check_pressed(vk_space) && !controls_disabled) {
 	if (coyote_timer > 0) {
 		vertical_speed = jump_height
 		coyote_timer = -1
@@ -26,6 +26,6 @@ if(keyboard_check_pressed(vk_space)) {
 	}
 }
 
-if (keyboard_check_released(vk_space) && vertical_speed < -5) {
+if (keyboard_check_released(vk_space) && !controls_disabled && vertical_speed < -5) {
 	vertical_speed = -5
 }

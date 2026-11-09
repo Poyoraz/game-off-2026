@@ -10,5 +10,5 @@ on_grapple_pull = method(self, function(force, dir) {
 })
 
 on_grapple_hook = method(self, function() {
-	return true
+	return self
 })

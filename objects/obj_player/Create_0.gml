@@ -120,7 +120,7 @@ bash = method(self, function(dir) {
 	
 	bashing.enable_physics()
 	
-	static BASH_MOMENTUM = 40
+	static BASH_MOMENTUM = 90
 	
 	var _momentum_x = lengthdir_x(BASH_MOMENTUM, dir),
 		_momentum_y = lengthdir_y(BASH_MOMENTUM, dir)
@@ -128,11 +128,11 @@ bash = method(self, function(dir) {
 	bashing.x = x + lengthdir_x(100, dir)
 	bashing.y = y + lengthdir_y(100, dir)
 		
-	bashing.transmit_momentum(_momentum_x, false, TransmitMomentumType.BASH)
-	bashing.transmit_momentum(_momentum_y, true, TransmitMomentumType.BASH)
+	bashing.transmit_momentum(_momentum_x * 5/8, false, TransmitMomentumType.BASH)
+	bashing.transmit_momentum(_momentum_y * 5/8, true, TransmitMomentumType.BASH)
 	
-	transmit_momentum(-_momentum_x, false, TransmitMomentumType.BASH)
-	transmit_momentum(-_momentum_y, true, TransmitMomentumType.BASH)
+	transmit_momentum(_momentum_x * -3/8, false, TransmitMomentumType.BASH)
+	transmit_momentum(_momentum_y * -3/8, true, TransmitMomentumType.BASH)
 	
 	bashing = noone
 })
