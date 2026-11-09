@@ -3,6 +3,8 @@ event_inherited()
 max_coyote_time = 6
 max_jump_buffer = 6
 
+invincibility = 0
+
 max_slide_effectiveness = 120
 slide_effectiveness = max_slide_effectiveness
 
@@ -26,6 +28,13 @@ disable_controls = method(self, function() {
 
 enable_controls = method(self, function() {
 	controls_disabled = false
+})
+
+damage = method(self, function() {
+	if(invincibility > 0) return;
+	
+	global.persistent_player_data.hp--
+	invincibility = invincibility_duration
 })
 
 player_cast = []

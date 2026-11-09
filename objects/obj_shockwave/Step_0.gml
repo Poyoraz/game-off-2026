@@ -11,7 +11,6 @@ if(_count == 0) {
 for (var i = 0; i < _count; ++i) {
 	var _item = list[| i]
 	
-	show_debug_message([_item, ds_list_find_index(hit_list, _item)])
     if(ds_list_find_index(hit_list, _item) != -1) continue
 	
 	ds_list_add(hit_list, _item)

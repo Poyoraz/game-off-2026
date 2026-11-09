@@ -1,6 +1,18 @@
+image_alpha = invincibility > 0 ? 0.8 : 1
+
 draw_self()
+
+draw_set_alpha(1)
+
 draw_text(x, y-16, coyote_timer)
 draw_text(16, 16, horizontal_speed)
+
+draw_set_colour(c_white)
+draw_set_valign(fa_bottom)
+draw_set_halign(fa_center)
+draw_text(x, bbox_top - 15, $"{global.persistent_player_data.hp}/4")
+draw_set_valign(fa_top)
+draw_set_halign(fa_left)
 
 if(instance_exists(bashing)) {
 	with (bashing) {
@@ -31,9 +43,9 @@ if(instance_exists(bashing)) {
 if(dash_cooldown > 0) {
 	draw_healthbar(
 		x - 25, 
-		bbox_top - 25, 
+		bbox_top - 35, 
 		x + 25, 
-		bbox_top - 30, 
+		bbox_top - 40, 
 		(max_dash_cooldown - dash_cooldown) / max_dash_cooldown * 100,
 		c_white,
 		c_red,

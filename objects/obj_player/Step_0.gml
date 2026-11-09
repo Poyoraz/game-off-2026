@@ -1,3 +1,5 @@
+invincibility--
+
 if (!controls_disabled) {
 	var held_right = keyboard_check(ord("D")),
 		held_left = keyboard_check(ord("A"))
