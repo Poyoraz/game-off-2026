@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"RunFunctionAnimation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"RunFunctionAnimation",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Addons/Animator/Items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

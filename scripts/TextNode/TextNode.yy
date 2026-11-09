@@ -6,7 +6,7 @@
   "name":"TextNode",
   "parent":{
     "name":"Nodes",
-    "path":"folders/PoyoGUI/Nodes.yy",
+    "path":"folders/Addons/PoyoGUI/Nodes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -4,7 +4,7 @@
   "name":"__shd_scribble_bake_effect_4dir",
   "parent":{
     "name":"Shaders",
-    "path":"folders/PoyoGUI/Addons/Scribble/(System - don't call these functions)/Shaders.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/Scribble/(System - don't call these functions)/Shaders.yy",
   },
   "resourceType":"GMShader",
   "resourceVersion":"2.0",

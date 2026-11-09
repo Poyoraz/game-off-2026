@@ -1,3 +1,3 @@
-//@desc Stop Dash
+///@desc Stop Dash
 
 stop_dash()

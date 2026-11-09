@@ -6,7 +6,7 @@
   "name":"scribble_glyph_set",
   "parent":{
     "name":"Font Modification",
-    "path":"folders/PoyoGUI/Addons/Scribble/Font Modification.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/Scribble/Font Modification.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

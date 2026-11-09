@@ -6,7 +6,7 @@
   "name":"scribble_font_has_character",
   "parent":{
     "name":"Fonts",
-    "path":"folders/PoyoGUI/Addons/Scribble/Fonts.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/Scribble/Fonts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

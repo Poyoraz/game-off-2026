@@ -6,7 +6,7 @@
   "name":"hover_handlers",
   "parent":{
     "name":"Library",
-    "path":"folders/PoyoGUI/Library.yy",
+    "path":"folders/Addons/PoyoGUI/Library.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

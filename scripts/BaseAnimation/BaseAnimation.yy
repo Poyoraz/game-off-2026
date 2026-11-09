@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"BaseAnimation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BaseAnimation",
+  "parent":{
+    "name":"Animator",
+    "path":"folders/Addons/Animator.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

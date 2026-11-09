@@ -6,7 +6,7 @@
   "name":"scribble_font_bake_outline_8dir",
   "parent":{
     "name":"Legacy",
-    "path":"folders/PoyoGUI/Addons/Scribble/Legacy.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/Scribble/Legacy.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

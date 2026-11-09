@@ -6,7 +6,7 @@
   "name":"scribble_color_get",
   "parent":{
     "name":"Colours",
-    "path":"folders/PoyoGUI/Addons/Scribble/Colours.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/Scribble/Colours.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

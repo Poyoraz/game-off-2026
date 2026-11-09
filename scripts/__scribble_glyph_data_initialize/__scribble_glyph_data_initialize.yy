@@ -6,7 +6,7 @@
   "name":"__scribble_glyph_data_initialize",
   "parent":{
     "name":"Initialization",
-    "path":"folders/PoyoGUI/Addons/Scribble/(System - don't call these functions)/Initialization.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/Scribble/(System - don't call these functions)/Initialization.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

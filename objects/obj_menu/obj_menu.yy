@@ -18,7 +18,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"PoyoGUI",
-    "path":"folders/PoyoGUI.yy",
+    "path":"folders/Addons/PoyoGUI.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"LinearCombinedAnimation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"LinearCombinedAnimation",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Addons/Animator/Items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

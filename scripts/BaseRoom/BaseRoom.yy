@@ -6,7 +6,7 @@
   "name":"BaseRoom",
   "parent":{
     "name":"PoyoGUI",
-    "path":"folders/PoyoGUI.yy",
+    "path":"folders/Addons/PoyoGUI.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

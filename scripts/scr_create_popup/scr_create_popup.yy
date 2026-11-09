@@ -6,7 +6,7 @@
   "name":"scr_create_popup",
   "parent":{
     "name":"Popup",
-    "path":"folders/PoyoGUI/Popup.yy",
+    "path":"folders/Addons/PoyoGUI/Popup.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

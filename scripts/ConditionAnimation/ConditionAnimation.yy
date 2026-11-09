@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ConditionAnimation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ConditionAnimation",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Addons/Animator/Items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

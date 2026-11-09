@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_animatable",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_animatable",
+  "parent":{
+    "name":"Animator",
+    "path":"folders/Addons/Animator.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

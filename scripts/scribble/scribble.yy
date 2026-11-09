@@ -6,7 +6,7 @@
   "name":"scribble",
   "parent":{
     "name":"Scribble",
-    "path":"folders/PoyoGUI/Addons/Scribble.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/Scribble.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

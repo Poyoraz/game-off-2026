@@ -6,7 +6,7 @@
   "name":"scribble_external_sound_exists",
   "parent":{
     "name":"External Assets",
-    "path":"folders/PoyoGUI/Addons/Scribble/External Assets.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/Scribble/External Assets.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"scr_remove_listener",
   "parent":{
     "name":"Listeners",
-    "path":"folders/PoyoGUI/Listeners.yy",
+    "path":"folders/Addons/PoyoGUI/Listeners.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

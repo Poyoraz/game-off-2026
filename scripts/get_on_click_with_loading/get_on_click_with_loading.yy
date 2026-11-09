@@ -6,7 +6,7 @@
   "name":"get_on_click_with_loading",
   "parent":{
     "name":"PoyoGUI",
-    "path":"folders/PoyoGUI.yy",
+    "path":"folders/Addons/PoyoGUI.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

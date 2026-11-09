@@ -6,7 +6,7 @@
   "name":"push_modal",
   "parent":{
     "name":"Modal",
-    "path":"folders/PoyoGUI/Modal.yy",
+    "path":"folders/Addons/PoyoGUI/Modal.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

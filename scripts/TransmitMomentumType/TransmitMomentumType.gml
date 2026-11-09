@@ -1,4 +1,6 @@
 enum TransmitMomentumType {
 	COLLISION,
-	HOOK_PULL
+	HOOK_PULL,
+	BASH,
+	SHOCKWAVE
 }

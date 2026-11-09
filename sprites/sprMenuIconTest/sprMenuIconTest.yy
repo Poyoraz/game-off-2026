@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Sprites",
-    "path":"folders/PoyoGUI/Addons/MajorGUI/Sprites.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/MajorGUI/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

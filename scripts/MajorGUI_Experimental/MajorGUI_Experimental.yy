@@ -6,7 +6,7 @@
   "name":"MajorGUI_Experimental",
   "parent":{
     "name":"MajorGUI",
-    "path":"folders/PoyoGUI/Addons/MajorGUI.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/MajorGUI.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

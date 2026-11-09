@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"WaitAnimation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"WaitAnimation",
+  "parent":{
+    "name":"Items",
+    "path":"folders/Addons/Animator/Items.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

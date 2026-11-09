@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"end_step_animatable",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"end_step_animatable",
+  "parent":{
+    "name":"Animator",
+    "path":"folders/Addons/Animator.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

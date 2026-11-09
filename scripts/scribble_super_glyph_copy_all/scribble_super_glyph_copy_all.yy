@@ -6,7 +6,7 @@
   "name":"scribble_super_glyph_copy_all",
   "parent":{
     "name":"Superfonts",
-    "path":"folders/PoyoGUI/Addons/Scribble/Superfonts.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/Scribble/Superfonts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

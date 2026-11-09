@@ -6,7 +6,7 @@
   "name":"draw_text_scribble",
   "parent":{
     "name":"Quick Functions",
-    "path":"folders/PoyoGUI/Addons/Scribble/Quick Functions.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/Scribble/Quick Functions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

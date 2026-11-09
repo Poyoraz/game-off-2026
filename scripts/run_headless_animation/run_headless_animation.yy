@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"run_headless_animation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"run_headless_animation",
+  "parent":{
+    "name":"Animator",
+    "path":"folders/Addons/Animator.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

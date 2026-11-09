@@ -1,3 +1,5 @@
+if(controls_disabled) exit
+
 if(instance_exists(obj_hook)) {
 	warp(obj_hook.x, obj_hook.y, true)
 	
@@ -29,6 +31,7 @@ disable_air_drag()
 disable_gravity()
 disable_controls()
 dashing = true
+if(_dir == 270) ground_pounding = true
 
 dash_cooldown = max_dash_cooldown
 

@@ -4,7 +4,7 @@
   "name":"shdSearchbox",
   "parent":{
     "name":"Shaders",
-    "path":"folders/PoyoGUI/Addons/MajorGUI/Shaders.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/MajorGUI/Shaders.yy",
   },
   "resourceType":"GMShader",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"scribble_anim_pulse",
   "parent":{
     "name":"Animation",
-    "path":"folders/PoyoGUI/Addons/Scribble/Animation.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/Scribble/Animation.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

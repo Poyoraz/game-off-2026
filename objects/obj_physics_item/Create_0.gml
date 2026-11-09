@@ -40,6 +40,14 @@ enable_air_drag = method(self, function() {
 	affected_by_airdrag = true
 })
 
+disable_physics = method(self, function() {
+	physics_disabled = true
+})
+
+enable_physics = method(self, function() {
+	physics_disabled = false
+})
+
 on_collide = method(self, function(collidee, vertical = false) {
 	var momentum = get_momentum(vertical)
 	if(vertical) {
@@ -58,6 +66,12 @@ on_collide = method(self, function(collidee, vertical = false) {
 })
 
 on_grapple_pull = method(self, function(force, dir) {
+	if(is_bashable) {
+		obj_player.set_bash(self)
+		
+		return
+	}
+	
 	var pull_momentum = force
 	
 	var _h_pull = lock_vertical 

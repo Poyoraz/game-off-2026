@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Popup",
-    "path":"folders/PoyoGUI/Popup.yy",
+    "path":"folders/Addons/PoyoGUI/Popup.yy",
   },
   "parentObjectId":null,
   "persistent":true,

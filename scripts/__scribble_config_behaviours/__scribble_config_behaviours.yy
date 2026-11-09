@@ -6,7 +6,7 @@
   "name":"__scribble_config_behaviours",
   "parent":{
     "name":"Configuration - Please edit these!",
-    "path":"folders/PoyoGUI/Addons/Scribble/Configuration - Please edit these!.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/Scribble/Configuration - Please edit these!.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

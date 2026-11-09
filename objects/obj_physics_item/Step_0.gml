@@ -1,3 +1,5 @@
+if(physics_disabled) exit
+
 #region VERTICAL SPEED
 
 if(vertical_speed <= terminal_velocity && affected_by_gravity)

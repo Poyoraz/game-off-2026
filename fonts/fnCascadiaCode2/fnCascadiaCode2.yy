@@ -120,7 +120,7 @@
   "name":"fnCascadiaCode2",
   "parent":{
     "name":"Fonts",
-    "path":"folders/PoyoGUI/Addons/MajorGUI/Fonts.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/MajorGUI/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

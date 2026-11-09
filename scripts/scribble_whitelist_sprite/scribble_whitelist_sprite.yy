@@ -6,7 +6,7 @@
   "name":"scribble_whitelist_sprite",
   "parent":{
     "name":"Miscellaneous",
-    "path":"folders/PoyoGUI/Addons/Scribble/Miscellaneous.yy",
+    "path":"folders/Addons/PoyoGUI/Addons/Scribble/Miscellaneous.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
