@@ -41,5 +41,5 @@
     "path":"sprites/spr_shockwave/spr_shockwave.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

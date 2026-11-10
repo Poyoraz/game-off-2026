@@ -44,6 +44,10 @@ _physics_item_on_collide = on_collide
 on_collide = method(self, function(collidee, vertical) {
 	if(dashing) interrupt_dash(collidee)
 	
+	if(object_is_ancestor(collidee.object_index, obj_terrain)) {
+		collidee.on_collided(self)
+	}
+	
 	_physics_item_on_collide(collidee, vertical)
 })
 

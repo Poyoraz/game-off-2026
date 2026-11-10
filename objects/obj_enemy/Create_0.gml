@@ -47,7 +47,7 @@ on_collide = method(self, function(collidee, vertical = false) {
 
 _physics_item_trasmit_momentum = transmit_momentum
 transmit_momentum = method(self, function(momentum, vertical = false, type = TransmitMomentumType.COLLISION) {	
-	if(type = TransmitMomentumType.COLLISION) {
+	if(type == TransmitMomentumType.COLLISION) {
 		damage_check(momentum)
 		
 		if(!instance_exists(self)) return;
