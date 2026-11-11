@@ -1,0 +1,3 @@
+if(entered) {
+	interact(self)
+}

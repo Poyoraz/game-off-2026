@@ -42,6 +42,7 @@
     {"name":"inst_6D030E5E","path":"rooms/room_ground_test/room_ground_test.yy",},
     {"name":"inst_1F300C6D","path":"rooms/room_ground_test/room_ground_test.yy",},
     {"name":"inst_61B2C6BA","path":"rooms/room_ground_test/room_ground_test.yy",},
+    {"name":"inst_2061B87C","path":"rooms/room_ground_test/room_ground_test.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -131,6 +132,7 @@
         {"$GMRInstance":"v4","%Name":"inst_61B2C6BA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_61B2C6BA","objectId":{"name":"obj_text_area","path":"objects/obj_text_area/obj_text_area.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_text_area","path":"objects/obj_text_area/obj_text_area.yy",},"propertyId":{"name":"text","path":"objects/obj_text_area/obj_text_area.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper dolor a nisi laoreet, quis viverra tellus rutrum. In ut mauris nulla. Pellentesque feugiat mauris arcu, in imperdiet arcu gravida id. Phasellus tincidunt neque ut neque suscipit, eu consectetur tortor auctor. Nulla facilisi. Suspendisse faucibus vel magna non hendrerit. Nam eros ipsum, aliquet in condimentum at, ullamcorper sed sem. Nunc ut nisi id est sagittis tempor a a lacus.",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.5,"scaleY":3.0,"x":2880.0,"y":1920.0,},
+        {"$GMRInstance":"v4","%Name":"inst_2061B87C","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2061B87C","objectId":{"name":"obj_interactable","path":"objects/obj_interactable/obj_interactable.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":1.5,"x":5312.0,"y":1728.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
