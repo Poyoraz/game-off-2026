@@ -223,20 +223,22 @@ _warp_with_trace_backwards = method(self, function(goal_x, goal_y) {
 		_offset_y
 		
 	if(_dir < 90 || _dir > 270) {
-		_offset_x = bbox_left - x
+		_offset_x = max(bbox_left - x, -abs(x - goal_x))
 	} else if(_dir == 90 || _dir == 270) {
-		_offset_x = 0
+		_offset_x = 0 
 	} else {
-		_offset_x = bbox_right - x
+		_offset_x = min(bbox_right - x, abs(x - goal_x))
 	}
 		
 	if(_dir == 0 || _dir == 180) {
 		_offset_y = 0
 	} else if(_dir < 180) {
-		_offset_y = bbox_bottom - y
+		_offset_y = min(bbox_bottom - y, abs(y - goal_y))
 	} else {
-		_offset_y = bbox_top - y
+		_offset_y = max(bbox_top - y, -abs(y - goal_y))
 	}
+	
+	show_debug_message([_dir, _offset_x, _offset_y])
 	
 	var _curr_x = goal_x,
 		_curr_y = goal_y
