@@ -44,8 +44,8 @@
   },
   "origin":4,
   "parent":{
-    "name":"BlockTerrain",
-    "path":"folders/BlockTerrain.yy",
+    "name":"Terrain",
+    "path":"folders/BlockTerrain/Terrain.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

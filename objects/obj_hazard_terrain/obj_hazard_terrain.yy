@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_hazard_terrain",
-    "path":"sprites/spr_hazard_terrain/spr_hazard_terrain.yy",
+    "name":"spr_hazard_block",
+    "path":"sprites/spr_hazard_block/spr_hazard_block.yy",
   },
   "spriteMaskId":null,
   "visible":true,

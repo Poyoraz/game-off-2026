@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_lock_camera",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_lock_camera",
+  "parent":{
+    "name":"Camera",
+    "path":"folders/Player/Camera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

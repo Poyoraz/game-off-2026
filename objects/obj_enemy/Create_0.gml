@@ -4,6 +4,10 @@ hp = max_hp
 
 _tolerated_pain_this_frame = 0
 
+on_death = method(self, function() {
+
+})
+
 check_for_death = method(self, function() {
 	if(hp > 0) return false
 	
