@@ -104,10 +104,18 @@ create_shockwave = method(self, function(collidee) {
 })
 
 bashing = noone
+hook_bash = false
 set_bash = method(self, function(item) {
 	item.disable_physics()
 	
-	item.x = room_width + 500
+	if(object_is_ancestor(item.object_index, obj_hookable_area) || item.object_index == obj_hookable_area) {
+		x = item.x + lengthdir_x(75, item.x)
+		y = item.y + lengthdir_y(75, item.y)
+		
+		hook_bash = true
+	} else {
+		item.x = room_width + 500
+	}
 	
 	bashing = item
 	
@@ -128,15 +136,41 @@ bash = method(self, function(dir) {
 	
 	var _momentum_x = lengthdir_x(BASH_MOMENTUM, dir),
 		_momentum_y = lengthdir_y(BASH_MOMENTUM, dir)
-		
-	bashing.x = x + lengthdir_x(100, dir)
-	bashing.y = y + lengthdir_y(100, dir)
-		
-	bashing.transmit_momentum(_momentum_x * 5/8, false, TransmitMomentumType.BASH)
-	bashing.transmit_momentum(_momentum_y * 5/8, true, TransmitMomentumType.BASH)
 	
-	transmit_momentum(_momentum_x * -3/8, false, TransmitMomentumType.BASH)
-	transmit_momentum(_momentum_y * -3/8, true, TransmitMomentumType.BASH)
+	if(hook_bash) {
+		warp(
+			x + lengthdir_x(50, dir),
+			y + lengthdir_y(50, dir)
+		)
+	
+		transmit_momentum(_momentum_x * 3/4, false, TransmitMomentumType.BASH)
+		transmit_momentum(_momentum_y * 3/4, true, TransmitMomentumType.BASH)
+	} else {
+		var _x = x, _y = y
+		
+		warp(
+			x + lengthdir_x(50, dir),
+			y + lengthdir_y(50, dir)
+		)
+		
+		bashing.x = _x
+		bashing.y = _y
+		
+		with(bashing) {
+			scr_warp_object_with_collision(
+				other.x + lengthdir_x(-100, dir),
+				other.y + lengthdir_y(-100, dir)
+			)
+		}
+			
+		bashing.transmit_momentum(_momentum_x * -5/8, false, TransmitMomentumType.BASH)
+		bashing.transmit_momentum(_momentum_y * -5/8, true, TransmitMomentumType.BASH)
+	
+		transmit_momentum(_momentum_x * 3/8, false, TransmitMomentumType.BASH)
+		transmit_momentum(_momentum_y * 3/8, true, TransmitMomentumType.BASH)
+	}
+	
+	hook_bash = false
 	
 	bashing = noone
 })
@@ -152,117 +186,4 @@ stop_dash = method(self, function() {
 	horizontal_speed /= 4
 })
 
-warp = method(self, function(goal_x, goal_y, trace_backwards = false) {
-	if(trace_backwards) return _warp_with_trace_backwards(goal_x, goal_y)
-	
-	var _dir = (point_direction(x, y, goal_x, goal_y) + 360) mod 360
-	
-	static STEP_SIZE = 5
-	
-	var _x_step = lengthdir_x(STEP_SIZE, _dir),
-		_y_step = lengthdir_y(STEP_SIZE, _dir)
-		
-	var _offset_x,
-		_offset_y
-		
-	if(_dir < 90 || _dir > 270) {
-		_offset_x = bbox_right - x
-	} else if(_dir == 90 || _dir == 270) {
-		_offset_x = 0
-	} else {
-		_offset_x = bbox_left - x
-	}
-		
-	if(_dir == 0 || _dir == 180) {
-		_offset_y = 0
-	} else if(_dir < 180) {
-		_offset_y = bbox_bottom - y
-	} else {
-		_offset_y = bbox_top - y
-	}
-	
-	var _curr_x = x + _offset_x,
-		_curr_y = y + _offset_y
-	
-	player_cast = []
-	
-	
-	var _max_iteration_count = point_distance(x, y, goal_x, goal_y) / STEP_SIZE
-	
-	for (var i = 0; i < _max_iteration_count; ++i) {
-		if(place_meeting(
-			_curr_x - _offset_x + _x_step, 
-			_curr_y - _offset_y + _y_step, 
-			obj_collidable
-		)) break
-		
-		_curr_x += _x_step
-		_curr_y += _y_step
-		
-		array_push(player_cast, [
-			_curr_x - _offset_x, 
-			_curr_y - _offset_y, 
-		])
-	}
-	
-	x = _curr_x - _offset_x
-	y = _curr_y - _offset_y
-	
-	
-})
-
-_warp_with_trace_backwards = method(self, function(goal_x, goal_y) {
-	var _dir = (point_direction(goal_x, goal_y, x, y) + 360) mod 360
-	
-	static STEP_SIZE = 5
-	
-	var _x_step = lengthdir_x(STEP_SIZE, _dir),
-		_y_step = lengthdir_y(STEP_SIZE, _dir)
-		
-	var _offset_x,
-		_offset_y
-		
-	if(_dir < 90 || _dir > 270) {
-		_offset_x = max(bbox_left - x, -abs(x - goal_x))
-	} else if(_dir == 90 || _dir == 270) {
-		_offset_x = 0 
-	} else {
-		_offset_x = min(bbox_right - x, abs(x - goal_x))
-	}
-		
-	if(_dir == 0 || _dir == 180) {
-		_offset_y = 0
-	} else if(_dir < 180) {
-		_offset_y = min(bbox_bottom - y, abs(y - goal_y))
-	} else {
-		_offset_y = max(bbox_top - y, -abs(y - goal_y))
-	}
-	
-	show_debug_message([_dir, _offset_x, _offset_y])
-	
-	var _curr_x = goal_x,
-		_curr_y = goal_y
-	
-	player_cast = []
-	
-	var _max_iteration_count = point_distance(x, y, goal_x, goal_y) / STEP_SIZE
-	
-	for (var i = 0; i < _max_iteration_count; ++i) {
-		if(!place_meeting(
-			_curr_x - _offset_x, 
-			_curr_y - _offset_y, 
-			obj_collidable
-		)) break
-		
-		_curr_x += _x_step
-		_curr_y += _y_step
-		
-		array_push(player_cast, [
-			_curr_x - _offset_x, 
-			_curr_y - _offset_y, 
-		])
-	}
-	
-	x = _curr_x - _offset_x
-	y = _curr_y - _offset_y
-})
+warp = method(self, scr_warp_object_with_collision)

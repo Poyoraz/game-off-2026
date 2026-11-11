@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_warp_object_with_collision",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_warp_object_with_collision",
+  "parent":{
+    "name":"Library",
+    "path":"folders/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

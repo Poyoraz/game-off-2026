@@ -15,18 +15,20 @@ draw_set_valign(fa_top)
 draw_set_halign(fa_left)
 
 if(instance_exists(bashing)) {
-	with (bashing) {
-		var _en_x = x,
-			_en_y = y
+	if(!hook_bash) {
+		with (bashing) {
+			var _en_x = x,
+				_en_y = y
 	
-		x = other.x
-		y = other.y
+			x = other.x
+			y = other.y
 
-		event_perform(ev_draw, ev_draw_normal)
+			event_perform(ev_draw, ev_draw_normal)
 
-		x = _en_x
-		y = _en_y
+			x = _en_x
+			y = _en_y
 	
+		}
 	}
 	
 	var _dir = point_direction(x, y, mouse_x, mouse_y)
@@ -54,12 +56,6 @@ if(dash_cooldown > 0) {
 		true,
 		false
 	)
-}
-
-draw_set_colour(c_purple)
-for (var i = 0; i < array_length(player_cast); ++i) {
-    var _item = player_cast[i]
-	draw_circle(_item[0], _item[1], 3, false)
 }
 
 draw_text(mouse_x, mouse_y - 20, $"{mouse_x} {mouse_y}")
