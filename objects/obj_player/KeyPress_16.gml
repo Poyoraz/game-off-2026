@@ -22,17 +22,4 @@ var _dir = get_angle_from_input(
 	held_down - held_up
 )
 
-coyote_timer = 0
-
-horizontal_speed = lengthdir_x(40, _dir)
-vertical_speed = lengthdir_y(40, _dir)
-
-disable_air_drag()
-disable_gravity()
-disable_controls()
-dashing = true
-if(_dir == 270) ground_pounding = true
-
-dash_cooldown = max_dash_cooldown
-
-alarm[0] = 15
+dash(_dir)

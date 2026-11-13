@@ -32,6 +32,18 @@ if (!controls_disabled) {
 	} else if(bottom_collision) {
 		horizontal_speed = scr_ease_value(horizontal_speed, 0, 5, true, 1)
 	}
+	
+	var pressed_down = keyboard_check_pressed(ord("S"))
+	if(pressed_down) {
+		
+		if(alarm[11] > 0) {
+			if(dash_cooldown < 0 && !instance_exists(obj_hook)) {
+				dash(270)
+			}
+		} else {
+			alarm[11] = 15
+		}
+	}
 }
 
 if(!dashing) dash_cooldown--

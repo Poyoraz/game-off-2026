@@ -51,6 +51,24 @@ on_collide = method(self, function(collidee, vertical) {
 	_physics_item_on_collide(collidee, vertical)
 })
 
+dash = method(self, function(_dir) {
+	coyote_timer = 0
+
+	horizontal_speed = lengthdir_x(40, _dir)
+	
+	vertical_speed = max(-15, lengthdir_y(40, _dir))
+
+	disable_air_drag()
+	disable_gravity()
+	disable_controls()
+	dashing = true
+	if(_dir == 270) ground_pounding = true
+
+	dash_cooldown = max_dash_cooldown
+
+	alarm[0] = 15
+})
+
 interrupt_dash = method(self, function(collidee) {
 	var _h_dir = horizontal_speed
 	
