@@ -161,8 +161,15 @@ bash = method(self, function(dir) {
 			y + lengthdir_y(50, dir)
 		)
 	
-		transmit_momentum(_momentum_x * 3/4, false, TransmitMomentumType.BASH)
-		transmit_momentum(_momentum_y * 3/4, true, TransmitMomentumType.BASH)
+		transmit_momentum(_momentum_x * 1/2, false, TransmitMomentumType.BASH)
+		transmit_momentum(
+			max(
+				-35,
+				_momentum_y * 1/2
+			), 
+			true, 
+			TransmitMomentumType.BASH
+		)
 	} else {
 		var _x = x, _y = y
 		
@@ -185,7 +192,15 @@ bash = method(self, function(dir) {
 		bashing.transmit_momentum(_momentum_y * -5/8, true, TransmitMomentumType.BASH)
 	
 		transmit_momentum(_momentum_x * 3/8, false, TransmitMomentumType.BASH)
-		transmit_momentum(_momentum_y * 3/8, true, TransmitMomentumType.BASH)
+		transmit_momentum(
+			// CAP UPWARDS SPEED
+			max(
+				-28,
+				_momentum_y * 3/8
+			), 
+			true, 
+			TransmitMomentumType.BASH
+		)
 	}
 	
 	hook_bash = false
