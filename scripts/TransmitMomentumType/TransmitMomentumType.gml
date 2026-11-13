@@ -3,5 +3,6 @@ enum TransmitMomentumType {
 	HOOK_PULL,
 	BASH,
 	SHOCKWAVE,
-	BULLET
+	BULLET,
+	INTERRUPT_DASH
 }

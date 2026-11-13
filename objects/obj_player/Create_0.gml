@@ -74,6 +74,12 @@ interrupt_dash = method(self, function(collidee) {
 	
 	if(ground_pounding) create_shockwave(collidee)
 	
+	var _horizontal_momentum = get_momentum(),
+		_vertical_momentum = get_momentum(true)
+		
+	collidee.transmit_momentum(_horizontal_momentum * 1.2, false, TransmitMomentumType.INTERRUPT_DASH)
+	collidee.transmit_momentum(_vertical_momentum * 1/4 , true, TransmitMomentumType.INTERRUPT_DASH)
+	
 	alarm[0] = -1
 	stop_dash()
 	
