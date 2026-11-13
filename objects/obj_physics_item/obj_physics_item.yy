@@ -45,6 +45,7 @@
     {"$GMObjectProperty":"v2","%Name":"minimum_momentum_for_horizontal_movement","filters":[],"listItems":[],"multiselect":false,"name":"minimum_momentum_for_horizontal_movement","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":4,},
     {"$GMObjectProperty":"v2","%Name":"terminal_velocity","filters":[],"listItems":[],"multiselect":false,"name":"terminal_velocity","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"22.5","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"is_bashable","filters":[],"listItems":[],"multiselect":false,"name":"is_bashable","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"tp_to_while_bashing","filters":[],"listItems":[],"multiselect":false,"name":"tp_to_while_bashing","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"physics_disabled","filters":[],"listItems":[],"multiselect":false,"name":"physics_disabled","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",

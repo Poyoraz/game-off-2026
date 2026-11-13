@@ -138,7 +138,17 @@ set_bash = method(self, function(item) {
 		
 		hook_bash = true
 	} else {
+			
 		item.x = room_width + 500
+		
+		if(item.tp_to_while_bashing) {
+			warp(
+				item.xprevious,
+				item.yprevious,
+				true
+			)
+		}
+		
 	}
 	
 	bashing = item
