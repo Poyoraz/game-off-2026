@@ -203,6 +203,7 @@
     {"id":{"name":"scr_listener_exists","path":"scripts/scr_listener_exists/scr_listener_exists.yy",},},
     {"id":{"name":"scr_lock_camera","path":"scripts/scr_lock_camera/scr_lock_camera.yy",},},
     {"id":{"name":"scr_remove_listener","path":"scripts/scr_remove_listener/scr_remove_listener.yy",},},
+    {"id":{"name":"scr_set_camera_zoom_level","path":"scripts/scr_set_camera_zoom_level/scr_set_camera_zoom_level.yy",},},
     {"id":{"name":"scr_unlock_camera","path":"scripts/scr_unlock_camera/scr_unlock_camera.yy",},},
     {"id":{"name":"scr_warp_object_with_collision","path":"scripts/scr_warp_object_with_collision/scr_warp_object_with_collision.yy",},},
     {"id":{"name":"scribble_add_macro","path":"scripts/scribble_add_macro/scribble_add_macro.yy",},},

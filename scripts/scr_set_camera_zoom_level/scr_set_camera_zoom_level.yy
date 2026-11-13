@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_set_camera_zoom_level",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_set_camera_zoom_level",
+  "parent":{
+    "name":"Camera",
+    "path":"folders/Player/Camera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
