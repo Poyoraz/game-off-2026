@@ -4,5 +4,6 @@ enum TransmitMomentumType {
 	BASH,
 	SHOCKWAVE,
 	BULLET,
-	INTERRUPT_DASH
+	INTERRUPT_DASH,
+	ATTACK
 }

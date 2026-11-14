@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"array_easy_copy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"array_easy_copy",
+  "parent":{
+    "name":"Library",
+    "path":"folders/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

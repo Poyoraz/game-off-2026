@@ -20,6 +20,8 @@ if (!controls_disabled) {
 			horizontal_speed += input_sign * max(5, h_abs/5)
 		}
 		
+		facing_left = held_left
+		
 		if (left_collision || right_collision) {
 			vertical_speed = scr_ease_value(
 				vertical_speed, 
@@ -34,15 +36,9 @@ if (!controls_disabled) {
 	}
 	
 	var pressed_down = keyboard_check_pressed(ord("S"))
-	if(pressed_down) {
+	if(pressed_down) {		
+		dash(270)
 		
-		if(alarm[11] > 0) {
-			if(dash_cooldown < 0 && !instance_exists(obj_hook)) {
-				dash(270)
-			}
-		} else {
-			alarm[11] = 15
-		}
 	}
 }
 

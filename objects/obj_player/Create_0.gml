@@ -5,6 +5,10 @@ max_jump_buffer = 6
 
 invincibility = 0
 
+facing_left = false
+
+attack_combo_counter = 0
+
 max_slide_effectiveness = 120
 slide_effectiveness = max_slide_effectiveness
 

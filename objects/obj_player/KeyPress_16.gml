@@ -22,4 +22,8 @@ var _dir = get_angle_from_input(
 	held_down - held_up
 )
 
+if(_dir == 0 && facing_left) {
+	_dir = 180
+}
+
 dash(_dir)
