@@ -20,7 +20,9 @@ if (!controls_disabled) {
 			horizontal_speed += input_sign * max(5, h_abs/5)
 		}
 		
-		facing_left = held_left
+		if(bottom_collision) {
+			facing_left = held_left
+		}
 		
 		if (left_collision || right_collision) {
 			vertical_speed = scr_ease_value(

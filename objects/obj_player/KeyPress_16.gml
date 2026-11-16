@@ -26,4 +26,6 @@ if(_dir == 0 && facing_left) {
 	_dir = 180
 }
 
+facing_left = ((_dir + 450) mod 360 > 180)
+
 dash(_dir)

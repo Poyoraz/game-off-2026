@@ -1,6 +1,16 @@
 image_alpha = invincibility > 0 ? 0.8 : 1
 
-draw_self()
+draw_sprite_ext(
+	sprite_index,
+	image_index,
+	x,
+	y,
+	facing_left ? -1 : 1,
+	1,
+	direction,
+	image_blend,
+	image_alpha
+)
 
 draw_set_alpha(1)
 
