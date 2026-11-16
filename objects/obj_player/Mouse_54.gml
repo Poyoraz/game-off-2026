@@ -224,8 +224,8 @@ if(bottom_collision) {
 		
 	var _dir = facing_left ? 215 : -35
 	
-	vertical_speed -= 18
-	horizontal_speed *= -0.5
+	vertical_speed = max(-14, vertical_speed - 18)
+	horizontal_speed *= -0.2
 		
 	var ATTACK_POWER = 45,
 		_momentum_x = lengthdir_x(ATTACK_POWER, _dir),
