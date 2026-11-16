@@ -1,3 +1,5 @@
+if(controls_disabled) return;
+
 if(bottom_collision) {
 	if(alarm[11] == -1) {
 		#region FIRST SWING

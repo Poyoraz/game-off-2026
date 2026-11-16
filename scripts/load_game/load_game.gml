@@ -7,6 +7,8 @@ function load_game(){
 		var _str = file_text_read_string(_file)
 		
 		_val = json_parse(_str)
+		
+		file_text_close(_file)
 	} catch(e) {
 		show_debug_message(e)
 		

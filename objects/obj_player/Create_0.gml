@@ -39,6 +39,19 @@ damage = method(self, function() {
 	
 	global.persistent_player_data.hp--
 	invincibility = invincibility_duration
+	
+	check_for_death()
+})
+
+check_for_death = method(self, function() {
+	if(global.persistent_player_data.hp > 0) return;
+	
+	//run animations here sometime
+	
+	global.SEND_TO_CHECKPOINT = true
+	global.persistent_player_data = new PersistentPlayerData()
+	
+	room_goto(SaveHandler.file.current_level)
 })
 
 player_cast = []

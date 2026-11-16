@@ -8,7 +8,8 @@ function save_game(){
 			file, 
 			json_stringify(SaveHandler.file.export_save())
 		)
-	
+		
+		file_text_close(file)
 	} catch(e) {
 		show_debug_message(e)
 	}

@@ -1,13 +1,20 @@
+global.SEND_TO_CHECKPOINT = false
+
 function MainMenu() : BaseRoom() constructor{
 	page = new RowNode([
 		new ColNode([
 			new ButtonNode("New Game", {
 				on_click: function() {
+					global.persistent_player_data = new PersistentPlayerData()
+					
 					room_goto(room_ground_test)
 				}
 			}),
 			new ButtonNode("Load Game", {
 				on_click: function() {
+					global.SEND_TO_CHECKPOINT = true
+					global.persistent_player_data = new PersistentPlayerData()
+					
 					room_goto(SaveHandler.file.current_level)
 				}
 			}),
