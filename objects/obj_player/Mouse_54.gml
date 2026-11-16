@@ -238,6 +238,6 @@ if(bottom_collision) {
 		_item.transmit_momentum(_momentum_y, true, TransmitMomentumType.ATTACK)
 	}
 		
-	alarm[11] = 15
+	alarm[11] = 30
 	
 }
