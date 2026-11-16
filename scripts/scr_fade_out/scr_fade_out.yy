@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_fade_out",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_fade_out",
+  "parent":{
+    "name":"Library",
+    "path":"folders/LevelUtility/Music/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

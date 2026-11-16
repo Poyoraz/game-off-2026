@@ -1,0 +1,1 @@
+global.LAST_ROOM_SOUNDTRACK = undefined

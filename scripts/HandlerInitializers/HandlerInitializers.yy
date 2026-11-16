@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"HandlerInitializers",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"HandlerInitializers",
+  "parent":{
+    "name":"LevelUtility",
+    "path":"folders/LevelUtility.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

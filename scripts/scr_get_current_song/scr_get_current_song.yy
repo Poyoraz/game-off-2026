@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_get_current_song",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_get_current_song",
+  "parent":{
+    "name":"Library",
+    "path":"folders/LevelUtility/Music/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

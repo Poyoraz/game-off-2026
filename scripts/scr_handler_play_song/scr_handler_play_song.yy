@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_handler_play_song",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_handler_play_song",
+  "parent":{
+    "name":"Library",
+    "path":"folders/LevelUtility/Music/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
