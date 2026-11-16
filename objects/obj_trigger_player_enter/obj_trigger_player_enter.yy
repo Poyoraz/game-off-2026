@@ -27,8 +27,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"on_enter","filters":[],"listItems":[],"multiselect":false,"name":"on_enter","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"show_debug_message","varType":4,},
-    {"$GMObjectProperty":"v2","%Name":"on_leave","filters":[],"listItems":[],"multiselect":false,"name":"on_leave","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"show_debug_message","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"on_enter","filters":[],"listItems":[],"multiselect":false,"name":"on_enter","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"returns_null","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"on_leave","filters":[],"listItems":[],"multiselect":false,"name":"on_leave","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"returns_null","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

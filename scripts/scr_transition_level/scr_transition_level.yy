@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_transition_level",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_transition_level",
+  "parent":{
+    "name":"Transitions",
+    "path":"folders/BlockTerrain/Triggers/Transitions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -84,8 +84,7 @@ if(bottom_collision) {
 		
 		alarm[11] = 15
 		#endregion
-	} else if(attack_combo_counter == 1) {
-		
+	} else if(attack_combo_counter == 1) {	
 		#region SECOND SWING
 		var _list = ds_list_create()
 		
@@ -165,6 +164,7 @@ if(bottom_collision) {
 		#endregion
 	}
 } else if(alarm[11] == -1) {
+	#region AERIAL SWING
 	var _list = ds_list_create()
 		
 	var _collision_count
@@ -241,5 +241,5 @@ if(bottom_collision) {
 	}
 		
 	alarm[11] = 30
-	
+	#endregion
 }

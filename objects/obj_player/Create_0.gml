@@ -24,6 +24,9 @@ ground_pounding = false
 max_dash_cooldown = 180
 dash_cooldown = 0
 
+screen_transition = 100
+start_transition = false
+
 controls_disabled = false
 
 disable_controls = method(self, function() {

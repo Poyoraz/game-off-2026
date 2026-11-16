@@ -1,5 +1,12 @@
 invincibility--
 
+screen_transition = scr_ease_value(
+	screen_transition, 
+	start_transition ? 100 : 0,
+	6,
+	true
+)
+
 if (!controls_disabled) {
 	var held_right = keyboard_check(ord("D")),
 		held_left = keyboard_check(ord("A"))
