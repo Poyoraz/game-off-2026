@@ -47,7 +47,6 @@ if (!controls_disabled) {
 	var pressed_down = keyboard_check_pressed(ord("S"))
 	if(pressed_down) {		
 		dash(270)
-		
 	}
 }
 

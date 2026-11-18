@@ -2,7 +2,11 @@
 /// @returns {Asset.GMSound}
 
 function scr_get_current_song(){
-	return instance_exists(obj_enemy)
-		? combat_theme
-		: calm_theme
+	if(instance_exists(obj_enemy) && combat_theme != noone) 
+		return combat_theme
+	
+	if(instance_exists(obj_enemy_spawner) && calm_theme != noone) 
+		return calm_theme
+	
+	return ambient_theme
 }

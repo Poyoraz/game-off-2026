@@ -59,3 +59,7 @@ transmit_momentum = method(self, function(momentum, vertical = false, type = Tra
 	
 	_physics_item_trasmit_momentum(momentum, vertical, type)
 })
+
+with(obj_music_handler) {
+	update()
+}

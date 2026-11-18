@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_slide_song",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_slide_song",
+  "parent":{
+    "name":"Library",
+    "path":"folders/LevelUtility/Music/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
