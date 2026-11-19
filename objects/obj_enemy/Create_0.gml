@@ -1,11 +1,13 @@
 event_inherited()
 
-hp = max_hp
+social_distancing = 400 // distance to keep from player
+move_dir = 0
 
+hp = max_hp
 _tolerated_pain_this_frame = 0
 
 on_death = method(self, function() {
-
+	instance_destroy()
 })
 
 check_for_death = method(self, function() {
@@ -58,4 +60,14 @@ transmit_momentum = method(self, function(momentum, vertical = false, type = Tra
 	}
 	
 	_physics_item_trasmit_momentum(momentum, vertical, type)
+})
+
+controls_disabled = false
+
+disable_controls = method(self, function() {
+	controls_disabled = true
+})
+
+enable_controls = method(self, function() {
+	controls_disabled = false
 })
