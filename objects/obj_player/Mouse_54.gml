@@ -82,7 +82,9 @@ if(bottom_collision) {
 			_item.transmit_momentum(_momentum_y, true, TransmitMomentumType.ATTACK)
 		}
 		
-		alarm[11] = 15
+		ds_list_destroy(_list)
+		
+		alarm[11] = 20
 		#endregion
 	} else if(attack_combo_counter == 1) {	
 		#region SECOND SWING
@@ -158,6 +160,8 @@ if(bottom_collision) {
 			_item.transmit_momentum(_momentum_x, false, TransmitMomentumType.ATTACK)
 			_item.transmit_momentum(_momentum_y, true, TransmitMomentumType.ATTACK)
 		}
+		
+		ds_list_destroy(_list)
 		
 		alarm[11] = 8
 		attack_combo_counter = 2
@@ -239,6 +243,8 @@ if(bottom_collision) {
 		_item.transmit_momentum(_momentum_x, false, TransmitMomentumType.ATTACK)
 		_item.transmit_momentum(_momentum_y, true, TransmitMomentumType.ATTACK)
 	}
+		
+	ds_list_destroy(_list)
 		
 	alarm[11] = 30
 	#endregion
