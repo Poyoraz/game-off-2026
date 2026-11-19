@@ -86,7 +86,7 @@ dash = method(self, function(_dir) {
 
 	dash_cooldown = max_dash_cooldown
 
-	alarm[0] = 15
+	alarm[0] = ground_pounding ? 120 : 15
 })
 
 interrupt_dash = method(self, function(collidee) {
