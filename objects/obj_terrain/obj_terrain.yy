@@ -39,6 +39,9 @@
     "name":"spr_block",
     "path":"sprites/spr_block/spr_block.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_block",
+    "path":"sprites/spr_block/spr_block.yy",
+  },
   "visible":true,
 }
