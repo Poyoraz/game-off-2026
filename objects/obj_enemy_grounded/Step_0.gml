@@ -1,7 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-
 if (!controls_disabled) {
 	if(move_dir != 0) {
 		var h_dir = sign(horizontal_speed),

@@ -56,6 +56,8 @@
     {"name":"obj_animation_runner","order":3,"path":"objects/obj_animation_runner/obj_animation_runner.yy",},
     {"name":"obj_bullet","order":4,"path":"objects/obj_bullet/obj_bullet.yy",},
     {"name":"obj_collidable","order":2,"path":"objects/obj_collidable/obj_collidable.yy",},
+    {"name":"obj_enemy_flying","order":6,"path":"objects/obj_enemy_flying/obj_enemy_flying.yy",},
+    {"name":"obj_enemy_grounded","order":5,"path":"objects/obj_enemy_grounded/obj_enemy_grounded.yy",},
     {"name":"obj_hazard_terrain","order":5,"path":"objects/obj_hazard_terrain/obj_hazard_terrain.yy",},
     {"name":"obj_hook","order":1,"path":"objects/obj_hook/obj_hook.yy",},
     {"name":"obj_malleable_block","order":3,"path":"objects/obj_malleable_block/obj_malleable_block.yy",},

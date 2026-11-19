@@ -1,20 +1,15 @@
 // Inherit the parent event
 event_inherited();
 
-var too_close = abs(obj_player.x - self.x) - social_distancing
+var player_dis = abs(obj_player.x - self.x)
+var player_dir = sign(obj_player.x - self.x)
 
-move_dir = sign(obj_player.x - self.x)
+var too_close = player_dis - social_distancing
 
-if (too_close < 0) {
-	move_dir *= -1;	
-}
-
-if(obj_player.x < x - social_distancing) {
-	move_dir = -1
-} else if(obj_player.x > x + social_distancing) {
-	move_dir = 1
-}
-
-if(move_dir = 0 && instance_exists(collision_line(x,bbox_top,x,y+400,obj_collidable,false,true))) {
-	random_range(-1,1)
+if ((social_distancing - follow_buffer) < player_dis && player_dis < (social_distancing + follow_buffer)) {
+	move_dir = 0;
+} else if (too_close < 0) {
+	move_dir = -player_dir;	
+} else {
+	move_dir = player_dir
 }

@@ -1,13 +1,14 @@
 event_inherited()
 
 social_distancing = 400 // distance to keep from player
+follow_buffer = 30 // slight buffer to prevent jitter when at follow distance
 move_dir = 0
 
 hp = max_hp
 _tolerated_pain_this_frame = 0
 
 on_death = method(self, function() {
-	instance_destroy()
+
 })
 
 check_for_death = method(self, function() {
