@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"_enemy_brain_none",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"_enemy_brain_none",
+  "parent":{
+    "name":"Behavior",
+    "path":"folders/Enemies/Behavior.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,14 +1,17 @@
 event_inherited()
 
-social_distancing = 400 // distance to keep from player
 follow_buffer = 30 // slight buffer to prevent jitter when at follow distance
 move_dir = 0
+
+scr_change_enemy_state(default_enemy_state)
+
+show_debug_message(brain_func)
 
 hp = max_hp
 _tolerated_pain_this_frame = 0
 
 on_death = method(self, function() {
-
+	
 })
 
 check_for_death = method(self, function() {

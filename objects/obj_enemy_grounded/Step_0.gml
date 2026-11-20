@@ -12,7 +12,7 @@ if (!controls_disabled) {
 			horizontal_speed += move_dir * 2
 		} else if(move_dir != h_dir && bottom_collision) {
 			horizontal_speed = move_dir * 2
-		} else if(!bottom_collision) {
+		} else if(h_abs < dash_max * 1.2 && !bottom_collision) {
 			horizontal_speed += move_dir * max(5, h_abs/5)
 		}
 	} else if(bottom_collision) {
