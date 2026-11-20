@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"EnemyLaserGun",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"EnemyLaserGun",
+  "parent":{
+    "name":"Weapon",
+    "path":"folders/Enemies/Weapon.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
