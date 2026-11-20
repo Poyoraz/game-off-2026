@@ -1,11 +1,17 @@
 event_inherited()
 
-hp = max_hp
+follow_buffer = 30 // slight buffer to prevent jitter when at follow distance
+move_dir = 0
 
+scr_change_enemy_state(default_enemy_state)
+
+show_debug_message(brain_func)
+
+hp = max_hp
 _tolerated_pain_this_frame = 0
 
 on_death = method(self, function() {
-
+	
 })
 
 check_for_death = method(self, function() {
@@ -58,6 +64,16 @@ transmit_momentum = method(self, function(momentum, vertical = false, type = Tra
 	}
 	
 	_physics_item_trasmit_momentum(momentum, vertical, type)
+})
+
+controls_disabled = false
+
+disable_controls = method(self, function() {
+	controls_disabled = true
+})
+
+enable_controls = method(self, function() {
+	controls_disabled = false
 })
 
 with(obj_music_handler) {

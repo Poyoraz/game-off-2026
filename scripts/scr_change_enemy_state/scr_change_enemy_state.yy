@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_change_enemy_state",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_change_enemy_state",
+  "parent":{
+    "name":"Behavior",
+    "path":"folders/Enemies/Behavior.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
