@@ -1,6 +1,6 @@
 locked = false
 
-zoom_level = 1.0
+zoom_level = 2.0
 
 _base_size = 1920
 

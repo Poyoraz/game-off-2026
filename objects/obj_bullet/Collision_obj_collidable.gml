@@ -1,4 +1,4 @@
-if(other.object_index == obj_enemy) exit
+if(other.object_index == obj_enemy || object_is_ancestor(other.object_index, obj_enemy)) exit
 
 if(other.object_index == obj_player) {
 	other.damage()

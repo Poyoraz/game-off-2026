@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"_enemy_brain_air_patrol",
+  "%Name":"EnemyWeapon",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"_enemy_brain_air_patrol",
+  "name":"EnemyWeapon",
   "parent":{
-    "name":"Behavior",
-    "path":"folders/Enemies/Behavior.yy",
+    "name":"Weapon",
+    "path":"folders/Enemies/Weapon.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

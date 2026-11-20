@@ -1,0 +1,3 @@
+function EnemyBrainAirPatrol() : EnemyBrainGroundPatrol() constructor {
+	
+}

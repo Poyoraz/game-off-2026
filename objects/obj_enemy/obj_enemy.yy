@@ -41,6 +41,7 @@
     {"$GMObjectProperty":"v2","%Name":"pain_tolerance","filters":[],"listItems":[],"multiselect":false,"name":"pain_tolerance","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"32","varDescription":"Damage threshold for the enemy to take damage","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"social_distancing","filters":[],"listItems":[],"multiselect":false,"name":"social_distancing","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"400","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"default_enemy_state","filters":[],"listItems":[],"multiselect":false,"name":"default_enemy_state","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"EnemyStates.NONE","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"WeaponConstructor","filters":[],"listItems":[],"multiselect":false,"name":"WeaponConstructor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"EnemyWeapon","varType":4,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

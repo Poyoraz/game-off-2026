@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"_enemy_brain_chase",
+  "%Name":"EnemyExplosiveGun",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"_enemy_brain_chase",
+  "name":"EnemyExplosiveGun",
   "parent":{
-    "name":"Behavior",
-    "path":"folders/Enemies/Behavior.yy",
+    "name":"Weapon",
+    "path":"folders/Enemies/Weapon.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

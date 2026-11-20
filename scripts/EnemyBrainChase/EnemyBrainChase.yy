@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"_enemy_brain_ground_patrol",
+  "%Name":"EnemyBrainChase",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"_enemy_brain_ground_patrol",
+  "name":"EnemyBrainChase",
   "parent":{
     "name":"Behavior",
     "path":"folders/Enemies/Behavior.yy",
