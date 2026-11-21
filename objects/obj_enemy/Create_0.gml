@@ -9,6 +9,10 @@ current_state = EnemyStates.NONE
 
 scr_change_enemy_state(default_enemy_state)
 
+projector = noone
+
+__projector_blocked = false
+
 weapon = new WeaponConstructor()
 
 hp = max_hp
@@ -46,6 +50,8 @@ death_check = method(self, function() {
 	_tolerated_pain_this_frame = 0
 	
 	if(_pain < pain_tolerance) return;
+	
+	if(instance_exists(projector) && !__projector_blocked) return;
 	
 	hp -= _pain
 	
@@ -88,4 +94,16 @@ on_grapple_hook = method(self, function() {
 
 with(obj_music_handler) {
 	update()
+}
+
+if(is_shielded) {
+	var _projector = instance_nearest(x, y, obj_shield_projector)
+	
+	if(instance_exists(_projector)) {
+		projector = _projector
+		
+		alarm[0] = 5
+	} else {
+		is_shielded = false
+	}
 }

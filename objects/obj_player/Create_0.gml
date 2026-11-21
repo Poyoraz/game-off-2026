@@ -160,6 +160,7 @@ set_bash = method(self, function(item) {
 	} else {
 			
 		item.x = room_width + 500
+		item.visible = false
 		
 		if(item.tp_to_while_bashing) {
 			warp(
@@ -216,6 +217,8 @@ bash = method(self, function(dir) {
 		
 		bashing.x = _x
 		bashing.y = _y
+		
+		bashing.visible = true
 		
 		with(bashing) {
 			scr_warp_object_with_collision(
