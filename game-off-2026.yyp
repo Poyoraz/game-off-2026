@@ -115,6 +115,7 @@
     {"id":{"name":"obj_hook","path":"objects/obj_hook/obj_hook.yy",},},
     {"id":{"name":"obj_hookable_area","path":"objects/obj_hookable_area/obj_hookable_area.yy",},},
     {"id":{"name":"obj_interactable","path":"objects/obj_interactable/obj_interactable.yy",},},
+    {"id":{"name":"obj_lava_handler","path":"objects/obj_lava_handler/obj_lava_handler.yy",},},
     {"id":{"name":"obj_level_transition","path":"objects/obj_level_transition/obj_level_transition.yy",},},
     {"id":{"name":"obj_malleable_block","path":"objects/obj_malleable_block/obj_malleable_block.yy",},},
     {"id":{"name":"obj_malleable_terrain","path":"objects/obj_malleable_terrain/obj_malleable_terrain.yy",},},

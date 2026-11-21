@@ -86,6 +86,7 @@
     {"name":"obj_explosive_bullet","order":9,"path":"objects/obj_explosive_bullet/obj_explosive_bullet.yy",},
     {"name":"obj_hazard_terrain","order":5,"path":"objects/obj_hazard_terrain/obj_hazard_terrain.yy",},
     {"name":"obj_hook","order":1,"path":"objects/obj_hook/obj_hook.yy",},
+    {"name":"obj_lava_handler","order":5,"path":"objects/obj_lava_handler/obj_lava_handler.yy",},
     {"name":"obj_malleable_block","order":3,"path":"objects/obj_malleable_block/obj_malleable_block.yy",},
     {"name":"obj_malleable_terrain","order":2,"path":"objects/obj_malleable_terrain/obj_malleable_terrain.yy",},
     {"name":"obj_menu","order":9,"path":"objects/obj_menu/obj_menu.yy",},

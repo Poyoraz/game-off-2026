@@ -6,5 +6,6 @@ enum TransmitMomentumType {
 	BULLET,
 	INTERRUPT_DASH,
 	ATTACK,
-	EXPLOSION
+	EXPLOSION,
+	LAVA_DAMAGE
 }
