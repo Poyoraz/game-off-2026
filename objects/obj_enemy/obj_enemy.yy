@@ -42,6 +42,7 @@
     {"$GMObjectProperty":"v2","%Name":"social_distancing","filters":[],"listItems":[],"multiselect":false,"name":"social_distancing","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"400","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"default_enemy_state","filters":[],"listItems":[],"multiselect":false,"name":"default_enemy_state","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"EnemyStates.NONE","varType":4,},
     {"$GMObjectProperty":"v2","%Name":"WeaponConstructor","filters":[],"listItems":[],"multiselect":false,"name":"WeaponConstructor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"EnemyWeapon","varType":4,},
+    {"$GMObjectProperty":"v2","%Name":"is_armored","filters":[],"listItems":[],"multiselect":false,"name":"is_armored","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

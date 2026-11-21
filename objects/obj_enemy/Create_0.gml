@@ -80,6 +80,12 @@ enable_controls = method(self, function() {
 	controls_disabled = false
 })
 
+on_grapple_hook = method(self, function() {
+	if(is_armored) return noone
+	
+	return self
+})
+
 with(obj_music_handler) {
 	update()
 }
