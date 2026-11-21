@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"EnemyStomp",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"EnemyStomp",
+  "parent":{
+    "name":"Weapon",
+    "path":"folders/Enemies/Weapon.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
