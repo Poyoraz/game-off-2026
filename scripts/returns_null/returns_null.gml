@@ -1,3 +1,3 @@
-function returns_null(){
+function returns_null(_args){
 	return pointer_null
 }
