@@ -6,7 +6,7 @@ if(instance_exists(bashing)) {
 	return;
 }
 
-if(!instance_exists(obj_hook)) {
+if(scr_hook_head_attached()) {
 	facing_left = ((_dir + 450) mod 360 > 180)
 	
 	var hook = instance_create_depth(x, y, depth + 1, obj_hook, {

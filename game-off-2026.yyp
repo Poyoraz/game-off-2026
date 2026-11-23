@@ -266,6 +266,7 @@
     {"id":{"name":"scr_get_audio_playing","path":"scripts/scr_get_audio_playing/scr_get_audio_playing.yy",},},
     {"id":{"name":"scr_get_current_song","path":"scripts/scr_get_current_song/scr_get_current_song.yy",},},
     {"id":{"name":"scr_handler_play_song","path":"scripts/scr_handler_play_song/scr_handler_play_song.yy",},},
+    {"id":{"name":"scr_hook_head_attached","path":"scripts/scr_hook_head_attached/scr_hook_head_attached.yy",},},
     {"id":{"name":"scr_listener_exists","path":"scripts/scr_listener_exists/scr_listener_exists.yy",},},
     {"id":{"name":"scr_lock_camera","path":"scripts/scr_lock_camera/scr_lock_camera.yy",},},
     {"id":{"name":"scr_play_sound","path":"scripts/scr_play_sound/scr_play_sound.yy",},},

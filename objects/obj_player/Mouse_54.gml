@@ -1,4 +1,5 @@
 if(controls_disabled) return;
+if(!scr_hook_head_attached()) return;
 
 if(bottom_collision) {
 	if(alarm[11] == -1) {

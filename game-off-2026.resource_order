@@ -207,6 +207,7 @@
     {"name":"scr_fade_out","order":5,"path":"scripts/scr_fade_out/scr_fade_out.yy",},
     {"name":"scr_get_audio_playing","order":2,"path":"scripts/scr_get_audio_playing/scr_get_audio_playing.yy",},
     {"name":"scr_get_current_song","order":1,"path":"scripts/scr_get_current_song/scr_get_current_song.yy",},
+    {"name":"scr_hook_head_attached","order":13,"path":"scripts/scr_hook_head_attached/scr_hook_head_attached.yy",},
     {"name":"scr_listener_exists","order":4,"path":"scripts/scr_listener_exists/scr_listener_exists.yy",},
     {"name":"scr_lock_camera","order":1,"path":"scripts/scr_lock_camera/scr_lock_camera.yy",},
     {"name":"scr_play_sound","order":2,"path":"scripts/scr_play_sound/scr_play_sound.yy",},
