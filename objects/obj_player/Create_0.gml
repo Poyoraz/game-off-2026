@@ -247,8 +247,8 @@ bash = method(self, function(dir) {
 	
 	if(hook_bash) {
 		warp(
-			x + lengthdir_x(50, dir),
-			y + lengthdir_y(50, dir)
+			x + lengthdir_x(75, dir),
+			y + lengthdir_y(75, dir)
 		)
 	
 		transmit_momentum(_momentum_x * 1/2, false, TransmitMomentumType.BASH)
@@ -275,8 +275,8 @@ bash = method(self, function(dir) {
 		
 		with(bashing) {
 			scr_warp_object_with_collision(
-				other.x + lengthdir_x(-100, dir),
-				other.y + lengthdir_y(-100, dir)
+				other.x + lengthdir_x(-125, dir),
+				other.y + lengthdir_y(-125, dir)
 			)
 		}
 			
