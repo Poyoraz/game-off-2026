@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Icons",
-    "path":"folders/LevelUtility/Icons.yy",
+    "name":"SFX",
+    "path":"folders/LevelUtility/SFX.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
