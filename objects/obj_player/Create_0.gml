@@ -258,4 +258,13 @@ stop_dash = method(self, function() {
 	horizontal_speed /= 4
 })
 
-warp = method(self, scr_warp_object_with_collision)
+warp = method(self, function(goal_x, goal_y, traceback) {
+	scr_create_after_image_animation(
+		x, 
+		y, 
+		point_direction(x, y, goal_x, goal_y),
+		sprite_index
+	)
+	
+	scr_warp_object_with_collision(goal_x, goal_y, traceback)
+})

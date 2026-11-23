@@ -258,6 +258,7 @@
     {"id":{"name":"scr_add_listener","path":"scripts/scr_add_listener/scr_add_listener.yy",},},
     {"id":{"name":"scr_batch_remove_listeners","path":"scripts/scr_batch_remove_listeners/scr_batch_remove_listeners.yy",},},
     {"id":{"name":"scr_change_enemy_state","path":"scripts/scr_change_enemy_state/scr_change_enemy_state.yy",},},
+    {"id":{"name":"scr_create_after_image_animation","path":"scripts/scr_create_after_image_animation/scr_create_after_image_animation.yy",},},
     {"id":{"name":"scr_create_popup","path":"scripts/scr_create_popup/scr_create_popup.yy",},},
     {"id":{"name":"scr_ease_value_angle","path":"scripts/scr_ease_value_angle/scr_ease_value_angle.yy",},},
     {"id":{"name":"scr_ease_value","path":"scripts/scr_ease_value/scr_ease_value.yy",},},

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_create_after_image_animation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_create_after_image_animation",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

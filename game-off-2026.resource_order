@@ -201,6 +201,7 @@
     {"name":"save_game","order":1,"path":"scripts/save_game/save_game.yy",},
     {"name":"scr_add_listener","order":1,"path":"scripts/scr_add_listener/scr_add_listener.yy",},
     {"name":"scr_batch_remove_listeners","order":2,"path":"scripts/scr_batch_remove_listeners/scr_batch_remove_listeners.yy",},
+    {"name":"scr_create_after_image_animation","order":14,"path":"scripts/scr_create_after_image_animation/scr_create_after_image_animation.yy",},
     {"name":"scr_create_popup","order":1,"path":"scripts/scr_create_popup/scr_create_popup.yy",},
     {"name":"scr_ease_value_angle","order":9,"path":"scripts/scr_ease_value_angle/scr_ease_value_angle.yy",},
     {"name":"scr_emit_listener","order":3,"path":"scripts/scr_emit_listener/scr_emit_listener.yy",},
