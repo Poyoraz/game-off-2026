@@ -4,6 +4,7 @@ if(instance_exists(grappled)) {
 	} else {
 		grappled.on_grapple_pull(80, point_direction(x, y, obj_player.x, obj_player.y))
 	}
+	instance_destroy()
+} else {
+	fail_hook()
 }
-
-instance_destroy()

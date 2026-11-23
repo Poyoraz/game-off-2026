@@ -5,7 +5,8 @@ var _px = obj_player.x,
 	_dir = point_direction(_px, _py, _hook_butt_x, _hook_butt_y),
 	// Remove ~1 link to stop extra drawing
 	_dist = point_distance(_px, _py, _hook_butt_x, _hook_butt_y),
-	skip_steps = max(1, (timer - _dist / 180) * 2)
+	skip_steps = max(1, (timer - _dist / 180) * 2),
+	_odd_frame = timer mod 6 < 3
 	
 var _chain_points = []
 	
@@ -41,7 +42,7 @@ while(i < _dist) {
 	i = _next_i
 }
 
-for (var j = 0; j < array_length(_chain_points) - skip_steps; j += 2) {
+for (var j = _odd_frame ? 0 : 1; j < array_length(_chain_points) - skip_steps; j += 2) {
 	var _curr = _chain_points[j]
 	
     draw_sprite_ext(
@@ -58,7 +59,7 @@ for (var j = 0; j < array_length(_chain_points) - skip_steps; j += 2) {
 	
 }
 
-for (var j = 1; j < array_length(_chain_points) - skip_steps; j += 2) {
+for (var j = _odd_frame ? 1 : 0; j < array_length(_chain_points) - skip_steps; j += 2) {
 	var _curr = _chain_points[j]
 	
     draw_sprite_ext(

@@ -33,7 +33,7 @@ function AfterImage(dir, timer, sprite) constructor {
 			_timer_perc = timer/max_timer
 		
 		with(parent) {
-			draw_sprite_ext(sprite, -1, x - _offset_x, y  - _offset_y, 1, 1, 0, c_white, _timer_perc)
+			draw_sprite_ext(sprite, -1, x - _offset_x, y  - _offset_y, 1, 1, 0, c_white, _timer_perc - .2)
 		}
 	}
 	
