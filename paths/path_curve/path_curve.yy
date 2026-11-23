@@ -1,0 +1,22 @@
+{
+  "$GMPath":"",
+  "%Name":"path_curve",
+  "closed":false,
+  "kind":1,
+  "name":"path_curve",
+  "parent":{
+    "name":"Failed Hook",
+    "path":"folders/Player/Failed Hook.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":0.0,"y":0.0,},
+    {"speed":100.0,"x":90.0,"y":90.0,},
+    {"speed":100.0,"x":180.0,"y":0.0,},
+    {"speed":100.0,"x":270.0,"y":-90.0,},
+    {"speed":100.0,"x":360.0,"y":0.0,},
+    {"speed":100.0,"x":353.53522,"y":-5.9437256,},
+  ],
+  "precision":8,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

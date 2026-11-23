@@ -9,7 +9,7 @@ if(instance_exists(bashing)) {
 if(!instance_exists(obj_hook)) {
 	facing_left = ((_dir + 450) mod 360 > 180)
 	
-	var hook = instance_create_depth(x, y, depth - 1, obj_hook, {
+	var hook = instance_create_depth(x, y, depth + 1, obj_hook, {
 		speed: 120,
 		direction: _dir,
 		image_angle: _dir

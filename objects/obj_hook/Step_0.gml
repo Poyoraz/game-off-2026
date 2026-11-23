@@ -1,7 +1,8 @@
 var _dist = point_distance(x, y, obj_player.x, obj_player.y)
 
 if(_dist > 1200) {
-	instance_destroy()
+	fail_hook()
+	return
 }
 
 var _vsp = vertical_speed
