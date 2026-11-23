@@ -36,7 +36,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_lava_box",
+    "path":"sprites/spr_lava_box/spr_lava_box.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
