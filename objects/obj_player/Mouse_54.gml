@@ -79,8 +79,7 @@ if(bottom_collision) {
 		for (var i = 0; i < _collision_count; ++i) {
 			var _item = _list[| i]
 			
-			_item.transmit_momentum(_momentum_x, false, TransmitMomentumType.ATTACK)
-			_item.transmit_momentum(_momentum_y, true, TransmitMomentumType.ATTACK)
+			attack(_item, ATTACK_POWER, _momentum_x, _momentum_y)
 		}
 		
 		ds_list_destroy(_list)
@@ -158,8 +157,7 @@ if(bottom_collision) {
 		for (var i = 0; i < _collision_count; ++i) {
 			var _item = _list[| i]
 			
-			_item.transmit_momentum(_momentum_x, false, TransmitMomentumType.ATTACK)
-			_item.transmit_momentum(_momentum_y, true, TransmitMomentumType.ATTACK)
+			attack(_item, ATTACK_POWER, _momentum_x, _momentum_y)
 		}
 		
 		ds_list_destroy(_list)
@@ -234,15 +232,14 @@ if(bottom_collision) {
 	vertical_speed = max(-14, vertical_speed - 18)
 	horizontal_speed *= -0.2
 		
-	var ATTACK_POWER = 45,
+	var ATTACK_POWER = 65,
 		_momentum_x = lengthdir_x(ATTACK_POWER, _dir),
 		_momentum_y = lengthdir_y(ATTACK_POWER, _dir)
 		
 	for (var i = 0; i < _collision_count; ++i) {
 		var _item = _list[| i]
 			
-		_item.transmit_momentum(_momentum_x, false, TransmitMomentumType.ATTACK)
-		_item.transmit_momentum(_momentum_y, true, TransmitMomentumType.ATTACK)
+		attack(_item, ATTACK_POWER, _momentum_x, _momentum_y, 10)
 	}
 		
 	ds_list_destroy(_list)

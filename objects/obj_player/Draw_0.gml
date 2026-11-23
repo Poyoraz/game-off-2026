@@ -14,16 +14,6 @@ draw_sprite_ext(
 
 draw_set_alpha(1)
 
-draw_text(x, y-16, coyote_timer)
-draw_text(16, 16, horizontal_speed)
-
-draw_set_colour(c_white)
-draw_set_valign(fa_bottom)
-draw_set_halign(fa_center)
-draw_text(x, bbox_top - 15, $"{global.persistent_player_data.hp}/4")
-draw_set_valign(fa_top)
-draw_set_halign(fa_left)
-
 if(instance_exists(bashing)) {
 	if(!hook_bash) {
 		with (bashing) {
@@ -67,5 +57,3 @@ if(dash_cooldown > 0) {
 		false
 	)
 }
-
-draw_text(mouse_x, mouse_y - 20, $"{mouse_x} {mouse_y}")

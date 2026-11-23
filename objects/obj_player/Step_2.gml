@@ -2,6 +2,7 @@ event_inherited()
 
 if (bottom_collision && jump_buffer > 0) {
 	vertical_speed = jump_height
+	inaction_timer = 0
 }else if ((left_collision || right_collision) && jump_buffer > 0) {
 	vertical_speed = jump_height-10
 	horizontal_speed = 30*(left_collision-right_collision)

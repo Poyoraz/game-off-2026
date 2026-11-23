@@ -14,8 +14,8 @@
   "name":"obj_hook",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Player.yy",
+    "name":"Hook",
+    "path":"folders/Player/Hook.yy",
   },
   "parentObjectId":null,
   "persistent":false,

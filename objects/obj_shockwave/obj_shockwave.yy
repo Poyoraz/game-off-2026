@@ -10,8 +10,8 @@
   "name":"obj_shockwave",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Player.yy",
+    "name":"Shockwave",
+    "path":"folders/Player/Shockwave.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,4 +1,16 @@
-draw_self()
+var _in_hit_lag = hit_lag > 0
+
+draw_sprite_ext(
+	sprite_index,
+	image_index,
+	x + (_in_hit_lag ? irandom_range(-5, 5) : 0),
+	y + (_in_hit_lag ? irandom_range(-5, 5) : 0),
+	image_xscale,
+	image_yscale,
+	direction,
+	image_blend,
+	image_alpha
+)
 
 weapon.draw(self)
 

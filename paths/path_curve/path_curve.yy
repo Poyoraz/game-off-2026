@@ -5,8 +5,8 @@
   "kind":1,
   "name":"path_curve",
   "parent":{
-    "name":"Failed Hook",
-    "path":"folders/Player/Failed Hook.yy",
+    "name":"Hook",
+    "path":"folders/Player/Hook.yy",
   },
   "points":[
     {"speed":100.0,"x":0.0,"y":0.0,},

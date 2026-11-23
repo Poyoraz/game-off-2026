@@ -1,0 +1,1 @@
+mouse_on_enemy = false

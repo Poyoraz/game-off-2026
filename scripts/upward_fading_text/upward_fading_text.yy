@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"upward_fading_text",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"upward_fading_text",
+  "parent":{
+    "name":"Library",
+    "path":"folders/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

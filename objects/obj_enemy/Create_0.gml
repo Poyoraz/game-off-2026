@@ -18,6 +18,12 @@ weapon = new WeaponConstructor()
 hp = max_hp
 _tolerated_pain_this_frame = 0
 
+hit_lag = 0
+
+ui_transparency = 0
+visual_health_perc = 100
+mouse_on_enemy = false
+
 on_death = method(self, function() {
 	
 })
@@ -53,7 +59,32 @@ death_check = method(self, function() {
 	
 	if(instance_exists(projector) && !__projector_blocked) return;
 	
+	ui_transparency = 400
+	
 	hp -= _pain
+	
+	if(_pain > 60) {
+		run_headless_animation(
+			impact_frame(5),
+			x,
+			y,
+			-999
+		)
+		
+		hit_lag = 5
+	}
+	
+	run_headless_animation(
+		upward_fading_text(
+			scribble($"[c_red][fnt_damage]-{round(_pain)}")
+				.align(fa_center, fa_middle),
+			1,
+			90
+		),
+		x,
+		y,
+		depth - 1
+	)
 	
 	check_for_death()
 })

@@ -7,15 +7,33 @@ screen_transition = scr_ease_value(
 	true
 )
 
+if(invincibility > 0) {
+	ui_transparency += 10
+}
+
+visual_health_perc = scr_ease_value(
+	visual_health_perc,
+	global.persistent_player_data.hp / 4 * 100,
+	10,
+	true
+)
+
+if(inaction_timer > 120) {
+	ui_transparency = scr_ease_value(ui_transparency, 100, 2)
+} else {
+	ui_transparency = scr_ease_value(ui_transparency, 0, 5)
+}
+
 if (!controls_disabled) {
 	var held_right = keyboard_check(ord("D")),
 		held_left = keyboard_check(ord("A"))
-		
 	// EITHER OR
 	if(!held_right ^^ !held_left) {
 		var input_sign = held_right - held_left,
 			h_dir = sign(horizontal_speed),
 			h_abs = abs(horizontal_speed)
+		
+		inaction_timer = 0
 			
 		var dash_max = abs(input_sign * 15)
 		
@@ -42,10 +60,16 @@ if (!controls_disabled) {
 		}
 	} else if(bottom_collision) {
 		horizontal_speed = scr_ease_value(horizontal_speed, 0, 5, true, 1)
+		
+		inaction_timer++
+	} else {
+		// falling
+		inaction_timer = 0
 	}
 	
 	var pressed_down = keyboard_check_pressed(ord("S"))
-	if(pressed_down) {		
+	if(pressed_down) {
+		inaction_timer = 0
 		dash(270)
 	}
 }

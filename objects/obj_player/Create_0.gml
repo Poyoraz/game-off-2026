@@ -1,32 +1,51 @@
 event_inherited()
 
+#region Jump properties
 max_coyote_time = 6
 max_jump_buffer = 6
-
-invincibility = 0
-
-facing_left = false
-
-attack_combo_counter = 0
-
-max_slide_effectiveness = 120
-slide_effectiveness = max_slide_effectiveness
 
 coyote_timer = max_coyote_time
 jump_buffer = 0
 jump_height = -35
 
+max_slide_effectiveness = 120
+slide_effectiveness = max_slide_effectiveness
+#endregion
+
+#region Attacking and damage
+invincibility = 0
+
+facing_left = false
+
+attack_combo_counter = 0
+#endregion
+
+#region Original Value Initializers
 _orig_grav = grav
 _orig_drag = air_drag
+#endregion
 
+#region Dashing
 dashing = false
 ground_pounding = false
 max_dash_cooldown = 180
 dash_cooldown = 0
+#endregion
 
+#region Bashing
+bashing = noone
+hook_bash = false
+#endregion
+
+#region UI
 screen_transition = 100
 start_transition = false
+inaction_timer = 0
+ui_transparency = 0
+visual_health_perc = 100
+#endregion
 
+#region Controls control
 controls_disabled = false
 
 disable_controls = method(self, function() {
@@ -36,7 +55,9 @@ disable_controls = method(self, function() {
 enable_controls = method(self, function() {
 	controls_disabled = false
 })
+#endregion
 
+#region Combat Methods
 damage = method(self, function() {
 	if(invincibility > 0) return;
 	
@@ -57,10 +78,20 @@ check_for_death = method(self, function() {
 	room_goto(SaveHandler.file.current_level)
 })
 
-player_cast = []
+attack = method(self, function(target, attack_power, _momentum_x, _momentum_y, hit_lag = 0) {
+			
+	target.transmit_momentum(_momentum_x, false, TransmitMomentumType.ATTACK)
+	target.transmit_momentum(_momentum_y, true, TransmitMomentumType.ATTACK)
+	
+	if(target.object_index == obj_enemy || object_is_ancestor(target.object_index, obj_enemy) && hit_lag > 0) {
+		target.hit_lag = hit_lag
+	}
 
+})
+#endregion
+
+#region Dash Methods
 _physics_item_on_collide = on_collide
-
 on_collide = method(self, function(collidee, vertical) {
 	if(dashing) interrupt_dash(collidee)
 	
@@ -147,8 +178,30 @@ create_shockwave = method(self, function(collidee) {
 	}
 })
 
-bashing = noone
-hook_bash = false
+stop_dash = method(self, function() {
+	enable_air_drag()
+	enable_gravity()
+	enable_controls()
+	dashing = false
+	ground_pounding = false
+	
+	vertical_speed /= 4
+	horizontal_speed /= 4
+})
+
+warp = method(self, function(goal_x, goal_y, traceback) {
+	scr_create_after_image_animation(
+		x, 
+		y, 
+		point_direction(x, y, goal_x, goal_y),
+		sprite_index
+	)
+	
+	scr_warp_object_with_collision(goal_x, goal_y, traceback)
+})
+#endregion
+
+#region Bash Methods
 set_bash = method(self, function(item) {
 	item.disable_physics()
 	
@@ -246,25 +299,4 @@ bash = method(self, function(dir) {
 	
 	bashing = noone
 })
-
-stop_dash = method(self, function() {
-	enable_air_drag()
-	enable_gravity()
-	enable_controls()
-	dashing = false
-	ground_pounding = false
-	
-	vertical_speed /= 4
-	horizontal_speed /= 4
-})
-
-warp = method(self, function(goal_x, goal_y, traceback) {
-	scr_create_after_image_animation(
-		x, 
-		y, 
-		point_direction(x, y, goal_x, goal_y),
-		sprite_index
-	)
-	
-	scr_warp_object_with_collision(goal_x, goal_y, traceback)
-})
+#endregion

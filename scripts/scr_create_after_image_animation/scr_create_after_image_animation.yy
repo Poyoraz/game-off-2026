@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_create_after_image_animation",
   "parent":{
-    "name":"Player",
-    "path":"folders/Player.yy",
+    "name":"Hook",
+    "path":"folders/Player/Hook.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

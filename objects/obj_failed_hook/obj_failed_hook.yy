@@ -10,8 +10,8 @@
   "name":"obj_failed_hook",
   "overriddenProperties":[],
   "parent":{
-    "name":"Failed Hook",
-    "path":"folders/Player/Failed Hook.yy",
+    "name":"Hook",
+    "path":"folders/Player/Hook.yy",
   },
   "parentObjectId":null,
   "persistent":false,

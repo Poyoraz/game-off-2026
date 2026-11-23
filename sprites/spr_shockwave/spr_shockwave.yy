@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Player",
-    "path":"folders/Player.yy",
+    "name":"Shockwave",
+    "path":"folders/Player/Shockwave.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

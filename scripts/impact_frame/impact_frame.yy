@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"impact_frame",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"impact_frame",
+  "parent":{
+    "name":"Library",
+    "path":"folders/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
