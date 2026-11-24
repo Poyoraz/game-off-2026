@@ -7,7 +7,7 @@ function MainMenu() : BaseRoom() constructor{
 				on_click: function() {
 					global.persistent_player_data = new PersistentPlayerData()
 					
-					room_goto(room_ground_test)
+					room_goto(lvl1)
 				}
 			}),
 			new ButtonNode("Load Game", {

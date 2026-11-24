@@ -92,7 +92,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"game-off-2026",
   "resources":[
@@ -122,6 +122,7 @@
     {"id":{"name":"obj_enemy_stationary_gun","path":"objects/obj_enemy_stationary_gun/obj_enemy_stationary_gun.yy",},},
     {"id":{"name":"obj_enemy_stationary_laser","path":"objects/obj_enemy_stationary_laser/obj_enemy_stationary_laser.yy",},},
     {"id":{"name":"obj_enemy_stationary_stomp","path":"objects/obj_enemy_stationary_stomp/obj_enemy_stationary_stomp.yy",},},
+    {"id":{"name":"obj_enemy_weak","path":"objects/obj_enemy_weak/obj_enemy_weak.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_explosive_bullet","path":"objects/obj_explosive_bullet/obj_explosive_bullet.yy",},},
     {"id":{"name":"obj_failed_hook","path":"objects/obj_failed_hook/obj_failed_hook.yy",},},
@@ -152,6 +153,7 @@
     {"id":{"name":"obj_trigger_player_enter","path":"objects/obj_trigger_player_enter/obj_trigger_player_enter.yy",},},
     {"id":{"name":"SaveHandler","path":"objects/SaveHandler/SaveHandler.yy",},},
     {"id":{"name":"path_curve","path":"paths/path_curve/path_curve.yy",},},
+    {"id":{"name":"lvl1","path":"rooms/lvl1/lvl1.yy",},},
     {"id":{"name":"room_base","path":"rooms/room_base/room_base.yy",},},
     {"id":{"name":"room_ground_test","path":"rooms/room_ground_test/room_ground_test.yy",},},
     {"id":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
@@ -451,6 +453,7 @@
     {"roomId":{"name":"room_test","path":"rooms/room_test/room_test.yy",},},
     {"roomId":{"name":"room_base","path":"rooms/room_base/room_base.yy",},},
     {"roomId":{"name":"room_main_menu","path":"rooms/room_main_menu/room_main_menu.yy",},},
+    {"roomId":{"name":"lvl1","path":"rooms/lvl1/lvl1.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
