@@ -233,11 +233,11 @@ if(bottom_collision) {
 	var _dir = facing_left ? 215 : -35
 	var _g_dir = facing_left ? 155 : 25
 		
-	var AERIAL_ATTACK_POWER = 35,
-		_a_momentum_x = lengthdir_x(ATTACK_POWER, _dir),
-		_a_momentum_y = lengthdir_y(ATTACK_POWER, _dir)
+	var AERIAL_ATTACK_POWER = 55,
+		_a_momentum_x = lengthdir_x(AERIAL_ATTACK_POWER, _dir),
+		_a_momentum_y = lengthdir_y(AERIAL_ATTACK_POWER, _dir)
 		
-	var GROUNDED_ATTACK_POWER = 15,
+	var GROUNDED_ATTACK_POWER = 25,
 		_g_momentum_x = lengthdir_x(GROUNDED_ATTACK_POWER, _g_dir),
 		_g_momentum_y = lengthdir_y(GROUNDED_ATTACK_POWER, _g_dir)
 		
@@ -247,7 +247,7 @@ if(bottom_collision) {
 		if(_item.bottom_collision) {
 			attack(_item, GROUNDED_ATTACK_POWER, _g_momentum_x, _g_momentum_y)	
 		} else {
-			attack(_item, AERIAL_ATTACK_POWER, _momentum_x, _momentum_y, 10)
+			attack(_item, AERIAL_ATTACK_POWER, _a_momentum_x, _a_momentum_y, 10)
 		}
 	}
 		
