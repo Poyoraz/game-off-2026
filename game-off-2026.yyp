@@ -139,6 +139,7 @@
     {"id":{"name":"obj_music_handler","path":"objects/obj_music_handler/obj_music_handler.yy",},},
     {"id":{"name":"obj_physics_item_that_jumps","path":"objects/obj_physics_item_that_jumps/obj_physics_item_that_jumps.yy",},},
     {"id":{"name":"obj_physics_item","path":"objects/obj_physics_item/obj_physics_item.yy",},},
+    {"id":{"name":"obj_player_location_marker","path":"objects/obj_player_location_marker/obj_player_location_marker.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_popup","path":"objects/obj_popup/obj_popup.yy",},},
     {"id":{"name":"obj_reinforced_terrain","path":"objects/obj_reinforced_terrain/obj_reinforced_terrain.yy",},},

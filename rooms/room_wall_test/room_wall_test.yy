@@ -30,6 +30,8 @@
     {"name":"inst_5AD141CA","path":"rooms/room_wall_test/room_wall_test.yy",},
     {"name":"inst_586541B5","path":"rooms/room_wall_test/room_wall_test.yy",},
     {"name":"inst_FD7002B","path":"rooms/room_wall_test/room_wall_test.yy",},
+    {"name":"inst_2691D4D5","path":"rooms/room_wall_test/room_wall_test.yy",},
+    {"name":"inst_7EBE9C81","path":"rooms/room_wall_test/room_wall_test.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -109,6 +111,11 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_music_handler","path":"objects/obj_music_handler/obj_music_handler.yy",},"propertyId":{"name":"calm_theme","path":"objects/obj_music_handler/obj_music_handler.yy",},"resource":{"name":"mus_battle_music_2","path":"sounds/mus_battle_music_2/mus_battle_music_2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"mus_battle_music_2",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_music_handler","path":"objects/obj_music_handler/obj_music_handler.yy",},"propertyId":{"name":"combat_theme","path":"objects/obj_music_handler/obj_music_handler.yy",},"resource":{"name":"mus_battle_music_2","path":"sounds/mus_battle_music_2/mus_battle_music_2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"mus_battle_music_2",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":-64.0,},
+        {"$GMRInstance":"v4","%Name":"inst_2691D4D5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2691D4D5","objectId":{"name":"obj_level_transition","path":"objects/obj_level_transition/obj_level_transition.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_level_transition","path":"objects/obj_level_transition/obj_level_transition.yy",},"propertyId":{"name":"target_room","path":"objects/obj_level_transition/obj_level_transition.yy",},"resource":{"name":"room_ground_test","path":"rooms/room_ground_test/room_ground_test.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"room_ground_test",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_level_transition","path":"objects/obj_level_transition/obj_level_transition.yy",},"propertyId":{"name":"target_marker","path":"objects/obj_level_transition/obj_level_transition.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1632.0,"y":960.0,},
+        {"$GMRInstance":"v4","%Name":"inst_7EBE9C81","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7EBE9C81","objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1248.0,"y":928.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
