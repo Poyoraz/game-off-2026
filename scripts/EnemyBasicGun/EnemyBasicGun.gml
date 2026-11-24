@@ -1,5 +1,5 @@
 function EnemyBasicGun() : EnemyWeapon() constructor{
-	cooldown = 400
+	cooldown = 100
 	range = 800
 
 	static tick = function(enemy) {
