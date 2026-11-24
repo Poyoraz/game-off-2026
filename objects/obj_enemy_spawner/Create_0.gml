@@ -1,3 +1,5 @@
+event_inherited()
+
 on_enter = function(this) {
 	var _enemy = instance_create_depth(x, y, depth, spawned_item, spawn_params)
 	
