@@ -63,7 +63,7 @@ death_check = method(self, function() {
 	
 	hp -= _pain
 	
-	if(_pain > 60) {
+	if(_pain > 60 && hp <= 0) {
 		run_headless_animation(
 			impact_frame(5),
 			x,
