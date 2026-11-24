@@ -1,11 +1,13 @@
 if(controls_disabled) exit
 
 if(instance_exists(obj_hook)) {
-	warp(obj_hook.x, obj_hook.y, true)
+	if(obj_hook.grappled) {
+		warp(obj_hook.x, obj_hook.y, true)
 	
-	instance_destroy(obj_hook)
+		instance_destroy(obj_hook)
 	
-	return;
+		return;
+	}
 }
 
 if(dash_cooldown > 0) {

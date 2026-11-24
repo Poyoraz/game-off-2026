@@ -19,6 +19,6 @@ with(obj_player) {
 	)
 		
 	if(instance_exists(line_collides)) {
-		instance_destroy(other)
+		other.fail_hook()
 	}
 }

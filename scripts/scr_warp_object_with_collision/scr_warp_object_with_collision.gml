@@ -79,7 +79,8 @@ function _scr_warp_with_backwards_trace(goal_x, goal_y) {
 	
 	var _max_iteration_count = point_distance(x, y, goal_x, goal_y) / STEP_SIZE
 	
-	for (var i = 0; i < _max_iteration_count; ++i) {
+	var i = 0
+	for (i = 0; i < _max_iteration_count; ++i) {
 		if(!place_meeting(
 			_curr_x - _offset_x, 
 			_curr_y - _offset_y, 
@@ -90,6 +91,10 @@ function _scr_warp_with_backwards_trace(goal_x, goal_y) {
 		_curr_y += _y_step
 	}
 	
-	x = _curr_x - _offset_x
-	y = _curr_y - _offset_y
+	// FAILED TO FIND
+	if(i > _max_iteration_count) {
+	} else {
+		x = _curr_x - _offset_x
+		y = _curr_y - _offset_y
+	}
 }
