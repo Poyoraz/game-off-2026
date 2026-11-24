@@ -28,7 +28,5 @@ camera_set_view_pos(
 	clamp(y - _camera_ht / 2, 0, room_height - _camera_ht)
 )
 
-show_debug_message([camera_get_view_x(obj_camera.camera), camera_get_view_y(obj_camera.camera)])
-
 global.SEND_TO_CHECKPOINT = false
 global.PLAYER_MARKER = -1
