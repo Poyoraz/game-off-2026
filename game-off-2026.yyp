@@ -410,6 +410,7 @@
     {"id":{"name":"spr_hazard_block","path":"sprites/spr_hazard_block/spr_hazard_block.yy",},},
     {"id":{"name":"spr_healing_kit","path":"sprites/spr_healing_kit/spr_healing_kit.yy",},},
     {"id":{"name":"spr_hello","path":"sprites/spr_hello/spr_hello.yy",},},
+    {"id":{"name":"spr_hook_indicator","path":"sprites/spr_hook_indicator/spr_hook_indicator.yy",},},
     {"id":{"name":"spr_hook","path":"sprites/spr_hook/spr_hook.yy",},},
     {"id":{"name":"spr_hookable_area","path":"sprites/spr_hookable_area/spr_hookable_area.yy",},},
     {"id":{"name":"spr_impact_frame","path":"sprites/spr_impact_frame/spr_impact_frame.yy",},},
