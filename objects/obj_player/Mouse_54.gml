@@ -226,20 +226,29 @@ if(bottom_collision) {
 			depth - 1
 		)
 	}
-		
-	var _dir = facing_left ? 215 : -35
 	
 	vertical_speed = max(-14, vertical_speed - 18)
 	horizontal_speed *= -0.2
 		
-	var ATTACK_POWER = 65,
-		_momentum_x = lengthdir_x(ATTACK_POWER, _dir),
-		_momentum_y = lengthdir_y(ATTACK_POWER, _dir)
+	var _dir = facing_left ? 215 : -35
+	var _g_dir = facing_left ? 155 : 25
+		
+	var AERIAL_ATTACK_POWER = 35,
+		_a_momentum_x = lengthdir_x(ATTACK_POWER, _dir),
+		_a_momentum_y = lengthdir_y(ATTACK_POWER, _dir)
+		
+	var GROUNDED_ATTACK_POWER = 15,
+		_g_momentum_x = lengthdir_x(GROUNDED_ATTACK_POWER, _g_dir),
+		_g_momentum_y = lengthdir_y(GROUNDED_ATTACK_POWER, _g_dir)
 		
 	for (var i = 0; i < _collision_count; ++i) {
 		var _item = _list[| i]
 			
-		attack(_item, ATTACK_POWER, _momentum_x, _momentum_y, 10)
+		if(_item.bottom_collision) {
+			attack(_item, GROUNDED_ATTACK_POWER, _g_momentum_x, _g_momentum_y)	
+		} else {
+			attack(_item, AERIAL_ATTACK_POWER, _momentum_x, _momentum_y, 10)
+		}
 	}
 		
 	ds_list_destroy(_list)

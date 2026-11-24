@@ -68,7 +68,7 @@ if (!controls_disabled) {
 	}
 	
 	var pressed_down = keyboard_check_pressed(ord("S"))
-	if(pressed_down) {
+	if(pressed_down && dash_cooldown < 0) {
 		inaction_timer = 0
 		dash(270)
 	}
