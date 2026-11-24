@@ -20,9 +20,13 @@ stop_speed = function(contacted) {
 	var result = contacted.on_grapple_hook()
 	
 	if(!instance_exists(result)) {
+		scr_play_sound(snd_grapple_blocked)
+	
 		fail_hook()
 		return true
 	}
+	
+	scr_play_sound(snd_grapple_impact)
 
 	grappled = result
 	horizontal_speed = 0
@@ -32,6 +36,8 @@ stop_speed = function(contacted) {
 }
 
 fail_hook = function() {
+	scr_play_sound(snd_grapple_suckback)
+		
 	instance_create_depth(
 		x,
 		y,

@@ -48,6 +48,9 @@
     {"$GMObjectProperty":"v2","%Name":"WeaponConstructor","filters":[],"listItems":[],"multiselect":false,"name":"WeaponConstructor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"EnemyWeapon","varType":4,},
     {"$GMObjectProperty":"v2","%Name":"is_armored","filters":[],"listItems":[],"multiselect":false,"name":"is_armored","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"is_shielded","filters":[],"listItems":[],"multiselect":false,"name":"is_shielded","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"death_sound","filters":[
+        "GMSound",
+      ],"listItems":[],"multiselect":false,"name":"death_sound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_explosion_rumble","path":"sounds/snd_explosion_rumble/snd_explosion_rumble.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_explosion_rumble","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

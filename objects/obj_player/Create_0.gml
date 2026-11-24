@@ -12,6 +12,10 @@ max_slide_effectiveness = 120
 slide_effectiveness = max_slide_effectiveness
 #endregion
 
+#region Sound handling
+step_timer = 0
+#endregion
+
 #region Attacking and damage
 invincibility = 0
 

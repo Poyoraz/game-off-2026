@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_grapple_overextend",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.24553289,
+  "exportDir":"",
+  "name":"snd_grapple_overextend",
+  "parent":{
+    "name":"Grapple",
+    "path":"folders/Audio/Player/Grapple.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_grapple_overextend.wav",
+  "volume":1.0,
+}

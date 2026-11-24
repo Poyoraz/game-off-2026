@@ -5,16 +5,7 @@ function impact_frame(duration){
 	
 	return new ParallelCombinedAnimation([
 		new WaitAnimation(duration),
-		new DrawAnimation(function(parent) {
-			with(parent) {
-				draw_sprite(
-					spr_impact_frame,
-					-1,
-					x,
-					y
-				)
-			}
-		}),
+		new PlaySpriteAnimation(spr_impact_frame, 1),
 		new BaseAnimation(
 			function() {
 			},

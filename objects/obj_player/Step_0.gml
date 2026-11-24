@@ -1,5 +1,7 @@
 invincibility--
 
+step_timer--
+
 screen_transition = scr_ease_value(
 	screen_transition, 
 	start_transition ? 100 : 0,
@@ -47,6 +49,18 @@ if (!controls_disabled) {
 		
 		if(bottom_collision) {
 			facing_left = held_left
+			
+			if(step_timer < 0) {
+				step_timer = 15
+				scr_play_sound(
+					choose(
+						snd_step_1,
+						snd_step_2,
+						snd_step_3,
+						snd_step_4
+					)
+				)
+			}
 		}
 		
 		if (left_collision || right_collision) {

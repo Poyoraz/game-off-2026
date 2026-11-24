@@ -9,6 +9,8 @@ if(instance_exists(bashing)) {
 if(scr_hook_head_attached()) {
 	facing_left = ((_dir + 450) mod 360 > 180)
 	
+	scr_play_sound(snd_grapple_fire)
+	
 	var hook = instance_create_depth(x, y, depth + 1, obj_hook, {
 		speed: 120,
 		direction: _dir,

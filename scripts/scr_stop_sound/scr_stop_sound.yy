@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_stop_sound",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_stop_sound",
+  "parent":{
+    "name":"SFX",
+    "path":"folders/LevelUtility/SFX.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

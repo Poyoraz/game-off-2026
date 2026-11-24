@@ -8,3 +8,9 @@ play_sound = method(self, function(sound) {
 		pitch
 	)
 })
+
+stop_sound = method(self, function(sound) {
+	audio_stop_sound(
+		sound
+	)
+})

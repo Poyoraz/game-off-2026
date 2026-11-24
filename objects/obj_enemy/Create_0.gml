@@ -25,11 +25,12 @@ visual_health_perc = 100
 mouse_on_enemy = false
 
 on_death = method(self, function() {
-	
+	scr_play_sound(death_sound)
 })
 
 check_for_death = method(self, function() {
 	if(hp > 0) return false
+	if(hit_lag > 0) return false
 	
 	run_headless_animation(
 		new PlaySpriteAnimation(spr_realistic_explosion, 1.5),
@@ -65,13 +66,15 @@ death_check = method(self, function() {
 	
 	if(_pain > 60 && hp <= 0) {
 		run_headless_animation(
-			impact_frame(5),
+			impact_frame(15),
 			x,
 			y,
 			-999
 		)
 		
-		hit_lag = 5
+		scr_play_sound(snd_metal_stomp)
+		
+		hit_lag = 15
 	}
 	
 	run_headless_animation(

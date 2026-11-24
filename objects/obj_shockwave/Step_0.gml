@@ -9,15 +9,15 @@ var _hit_movable_item = false
 for (var i = 0; i < _count; ++i) {
 	var _item = list[| i]
 	
+	if(!_item.lock_vertical) {
+		_hit_movable_item = true
+	}
+	
     if(ds_list_find_index(hit_list, _item) != -1) continue
 	
 	ds_list_add(hit_list, _item)
 	
-	if(!_item.lock_vertical) {
-		_hit_movable_item = true
-		
-		_item.transmit_momentum(-size, true, TransmitMomentumType.SHOCKWAVE)
-	}
+	_item.transmit_momentum(-size, true, TransmitMomentumType.SHOCKWAVE)
 }
 
 if(!_hit_movable_item) {

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_grapple_suckback",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.88462585,
+  "exportDir":"",
+  "name":"snd_grapple_suckback",
+  "parent":{
+    "name":"Grapple",
+    "path":"folders/Audio/Player/Grapple.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_grapple_suckback.ogg",
+  "volume":1.0,
+}

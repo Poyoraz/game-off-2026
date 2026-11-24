@@ -1,6 +1,7 @@
 var _dist = point_distance(x, y, obj_player.x, obj_player.y)
 
 if(_dist > 1200) {
+	scr_play_sound(snd_grapple_overextend)
 	fail_hook()
 	return
 }
