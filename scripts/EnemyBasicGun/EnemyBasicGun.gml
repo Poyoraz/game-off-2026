@@ -17,6 +17,13 @@ function EnemyBasicGun() : EnemyWeapon() constructor{
 					}
 				)
 				
+				scr_play_sound(
+					choose(
+						snd_shoot_1,
+						snd_shoot_2
+					)
+				)
+				
 				cooldown = 400
 			}
 		}

@@ -16,6 +16,10 @@ function EnemyLaserGun() : EnemyWeapon() constructor{
 				15,
 				true,
 			)
+			
+			if(cooldown == initial_cooldown) {
+				scr_play_sound(snd_robot_lock_on)
+			}
 		
 			cooldown--
 			

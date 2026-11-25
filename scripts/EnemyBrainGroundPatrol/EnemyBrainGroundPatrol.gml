@@ -2,16 +2,22 @@ function EnemyBrainGroundPatrol() : EnemyBrain() constructor{
 	
 	pause_timer = 0
 	
+	convo_timer = 0
+	
 	
 	static tick = function(enemy) {
 		var move_dir = enemy.move_dir
 		
-		if(irandom_range(0, 600) == 5) {
+		convo_timer--
+		
+		if(irandom_range(0, 600) == 5 && convo_timer < 0) {
 			scr_play_sound(
 				choose(
 					snd_robot_convo_1, snd_robot_convo_1
 				)
 			)
+			
+			convo_timer = 600
 		}
 		
 		if(move_dir == 0) {
