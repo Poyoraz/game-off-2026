@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_e_shockwave_3",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.9215193,
+  "exportDir":"",
+  "name":"snd_e_shockwave_3",
+  "parent":{
+    "name":"Shockwave",
+    "path":"folders/Audio/Enemy/Shockwave.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_e_shockwave_3.ogg",
+  "volume":1.0,
+}

@@ -191,7 +191,8 @@ create_shockwave = method(self, function(collidee) {
 			obj_shockwave,
 			{
 				direction: _dir,
-				initial_items: _precollide_list
+				initial_items: _precollide_list,
+				player_caused: true
 			}
 		)
 	}

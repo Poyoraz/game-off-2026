@@ -17,6 +17,10 @@ for (var i = 0; i < _count; ++i) {
 	
 	ds_list_add(hit_list, _item)
 	
+	scr_play_sound(player_caused
+		? choose(snd_p_shockwave_1, snd_p_shockwave_2, snd_p_shockwave_3, snd_p_shockwave_4, snd_p_shockwave_5, snd_p_shockwave_6, snd_p_shockwave_7, snd_p_shockwave_8, snd_p_shockwave_9, snd_p_shockwave_10)
+		: choose(snd_e_shockwave_1, snd_e_shockwave_2, snd_e_shockwave_3, snd_e_shockwave_4, snd_e_shockwave_5, snd_e_shockwave_6, snd_e_shockwave_7, snd_e_shockwave_8, snd_e_shockwave_9, snd_e_shockwave_10)
+	)
 	_item.transmit_momentum(-size, true, TransmitMomentumType.SHOCKWAVE)
 }
 
