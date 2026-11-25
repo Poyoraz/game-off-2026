@@ -6,6 +6,14 @@ function EnemyBrainGroundPatrol() : EnemyBrain() constructor{
 	static tick = function(enemy) {
 		var move_dir = enemy.move_dir
 		
+		if(irandom_range(0, 600) == 5) {
+			scr_play_sound(
+				choose(
+					snd_robot_convo_1, snd_robot_convo_1
+				)
+			)
+		}
+		
 		if(move_dir == 0) {
 			enemy.move_dir = 1
 		} else if(move_dir == 1 && enemy.right_collision) {
@@ -29,6 +37,9 @@ function EnemyBrainGroundPatrol() : EnemyBrain() constructor{
 	
 		if(point_distance(enemy.x, enemy.y, obj_player.x, obj_player.y) < enemy.social_distancing) 
 			with(enemy) {
+				scr_play_sound(
+					choose(snd_robot_alert_1, snd_robot_alert_2)
+				)
 				scr_change_enemy_state(EnemyStates.CHASE_PLAYER)
 			}
 	}
