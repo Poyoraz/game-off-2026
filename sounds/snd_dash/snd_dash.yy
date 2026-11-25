@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.5865079,
+  "duration":2.4062586,
   "exportDir":"",
   "name":"snd_dash",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_dash.wav",
-  "volume":0.62,
+  "volume":1.0,
 }

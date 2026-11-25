@@ -52,7 +52,7 @@ if(bottom_collision) {
 			attack(_item, ATTACK_POWER, _momentum_x, _momentum_y)
 		}
 		
-		if(_collision_count > 0) scr_play_sound(snd_light_hit)
+		scr_play_sound(_collision_count > 0 ? snd_light_hit : snd_light_miss)
 		
 		ds_list_destroy(_list)
 		
@@ -102,7 +102,7 @@ if(bottom_collision) {
 			attack(_item, ATTACK_POWER, _momentum_x, _momentum_y)
 		}
 		
-		if(_collision_count > 0) scr_play_sound(snd_medium_hit)
+		scr_play_sound(_collision_count > 0 ? snd_medium_hit : snd_medium_miss)
 		
 		ds_list_destroy(_list)
 		
@@ -166,7 +166,7 @@ if(bottom_collision) {
 		}
 	}
 	
-	if(_collision_count > 0) scr_play_sound(snd_heavy_hit)
+	scr_play_sound(_collision_count > 0 ? snd_heavy_hit : snd_heavy_miss)
 		
 	ds_list_destroy(_list)
 		

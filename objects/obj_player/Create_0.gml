@@ -16,6 +16,11 @@ slide_effectiveness = max_slide_effectiveness
 step_timer = 0
 #endregion
 
+#region Particle types
+star_sys = part_system_create(prt_stars)
+part_type = particle_get_info(prt_stars).emitters[0].parttype.ind
+#endregion
+
 #region Attacking and damage
 invincibility = 0
 
@@ -87,7 +92,15 @@ attack = method(self, function(target, attack_power, _momentum_x, _momentum_y, h
 	target.transmit_momentum(_momentum_x, false, TransmitMomentumType.ATTACK)
 	target.transmit_momentum(_momentum_y, true, TransmitMomentumType.ATTACK)
 	
-	if(target.object_index == obj_enemy || object_is_ancestor(target.object_index, obj_enemy) && hit_lag > 0) {
+	if(target.object_index == obj_enemy || object_is_ancestor(target.object_index, obj_enemy)) {
+		part_particles_create(
+			star_sys,
+			target.x,
+			target.y,
+			part_type,
+			hit_lag + 5
+		)
+	
 		target.hit_lag = hit_lag
 	}
 
@@ -120,6 +133,8 @@ dash = method(self, function(_dir) {
 	if(_dir == 270) ground_pounding = true
 
 	dash_cooldown = max_dash_cooldown
+	
+	scr_play_sound(snd_dash)
 
 	alarm[0] = ground_pounding ? 120 : 15
 })
@@ -193,7 +208,7 @@ stop_dash = method(self, function() {
 	horizontal_speed /= 4
 })
 
-warp = method(self, function(goal_x, goal_y, traceback) {
+warp = method(self, function(goal_x, goal_y, traceback = false) {
 	scr_create_after_image_animation(
 		x, 
 		y, 

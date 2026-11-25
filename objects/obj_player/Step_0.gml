@@ -26,6 +26,8 @@ if(inaction_timer > 120) {
 	ui_transparency = scr_ease_value(ui_transparency, 0, 5)
 }
 
+var _currently_wall_sliding = false
+
 if (!controls_disabled) {
 	var held_right = keyboard_check(ord("D")),
 		held_left = keyboard_check(ord("A"))
@@ -69,6 +71,20 @@ if (!controls_disabled) {
 				5,
 				max(1 * (slide_effectiveness / max_slide_effectiveness), 0)
 			)
+	
+			if(!bottom_collision) {
+				if(!audio_is_playing(snd_wall_slide)) scr_play_sound(snd_wall_slide)
+			
+				_currently_wall_sliding = true
+			
+				part_particles_create(
+					star_sys,
+					left_collision ? bbox_left : bbox_right,
+					y,
+					part_type,
+					choose(0, 0, 0, 1)
+				)
+			}
 			
 			slide_effectiveness--
 		}
@@ -87,6 +103,8 @@ if (!controls_disabled) {
 		dash(270)
 	}
 }
+
+if(!_currently_wall_sliding && audio_is_playing(snd_wall_slide)) scr_stop_sound(snd_wall_slide)
 
 if(!dashing) dash_cooldown--
 
