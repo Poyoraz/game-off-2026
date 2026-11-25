@@ -24,21 +24,6 @@ if(bottom_collision) {
 			)
 			
 			horizontal_speed -= 5
-			
-			run_headless_animation(
-				new ParallelCombinedAnimation([
-					new DrawRectangleAnimation(
-						bbox_left,
-						y - 10,
-						bbox_left - 100,
-						y + 10
-					),
-					new WaitAnimation(3)
-				]),
-				x,
-				y,
-				depth - 1
-			)
 		} else {
 			_collision_count = collision_rectangle_list(
 				bbox_right,
@@ -53,21 +38,6 @@ if(bottom_collision) {
 			)
 			
 			horizontal_speed += 5
-			
-			run_headless_animation(
-				new ParallelCombinedAnimation([
-					new DrawRectangleAnimation(
-						bbox_right,
-						y - 10,
-						bbox_right + 100,
-						y + 10
-					),
-					new WaitAnimation(3)
-				]),
-				x,
-				y,
-				depth - 1
-			)
 		}
 		
 		var _dir = facing_left ? 150 : 30
@@ -81,6 +51,8 @@ if(bottom_collision) {
 			
 			attack(_item, ATTACK_POWER, _momentum_x, _momentum_y)
 		}
+		
+		if(_collision_count > 0) scr_play_sound(snd_light_hit)
 		
 		ds_list_destroy(_list)
 		
@@ -104,21 +76,6 @@ if(bottom_collision) {
 				_list,
 				false
 			)
-			
-			run_headless_animation(
-				new ParallelCombinedAnimation([
-					new DrawRectangleAnimation(
-						bbox_left,
-						y - 50,
-						bbox_left - 150,
-						y + 50
-					),
-					new WaitAnimation(3)
-				]),
-				x,
-				y,
-				depth - 1
-			)
 		} else {
 			_collision_count = collision_rectangle_list(
 				bbox_right,
@@ -130,21 +87,6 @@ if(bottom_collision) {
 				true,
 				_list,
 				false
-			)
-			
-			run_headless_animation(
-				new ParallelCombinedAnimation([
-					new DrawRectangleAnimation(
-						bbox_right,
-						y - 50,
-						bbox_right + 150,
-						y + 50
-					),
-					new WaitAnimation(3)
-				]),
-				x,
-				y,
-				depth - 1
 			)
 		}
 		
@@ -159,6 +101,8 @@ if(bottom_collision) {
 			
 			attack(_item, ATTACK_POWER, _momentum_x, _momentum_y)
 		}
+		
+		if(_collision_count > 0) scr_play_sound(snd_medium_hit)
 		
 		ds_list_destroy(_list)
 		
@@ -184,21 +128,6 @@ if(bottom_collision) {
 			_list,
 			false
 		)
-			
-		run_headless_animation(
-			new ParallelCombinedAnimation([
-				new DrawRectangleAnimation(
-					bbox_left + 30,
-					y - 150,
-					bbox_left - 150,
-					y + 150
-				),
-				new WaitAnimation(3)
-			]),
-			x,
-			y,
-			depth - 1
-		)
 	} else {
 		_collision_count = collision_rectangle_list(
 			bbox_right - 30,
@@ -210,20 +139,6 @@ if(bottom_collision) {
 			true,
 			_list,
 			false
-		)
-		run_headless_animation(
-			new ParallelCombinedAnimation([
-				new DrawRectangleAnimation(
-					bbox_right - 30,
-					y - 150,
-					bbox_right + 150,
-					y + 150
-				),
-				new WaitAnimation(3)
-			]),
-			x,
-			y,
-			depth - 1
 		)
 	}
 	
@@ -250,6 +165,8 @@ if(bottom_collision) {
 			attack(_item, AERIAL_ATTACK_POWER, _a_momentum_x, _a_momentum_y, 10)
 		}
 	}
+	
+	if(_collision_count > 0) scr_play_sound(snd_heavy_hit)
 		
 	ds_list_destroy(_list)
 		

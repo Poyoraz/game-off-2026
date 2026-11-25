@@ -201,6 +201,8 @@ warp = method(self, function(goal_x, goal_y, traceback) {
 		sprite_index
 	)
 	
+	scr_play_sound(snd_dash)
+	
 	scr_warp_object_with_collision(goal_x, goal_y, traceback)
 })
 #endregion
