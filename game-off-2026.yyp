@@ -105,7 +105,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2024.14.1.210",
   },
   "name":"game-off-2026",
   "resources":[
@@ -173,6 +173,7 @@
     {"id":{"name":"prt_stars","path":"particles/prt_stars/prt_stars.yy",},},
     {"id":{"name":"path_curve","path":"paths/path_curve/path_curve.yy",},},
     {"id":{"name":"lvl1","path":"rooms/lvl1/lvl1.yy",},},
+    {"id":{"name":"lvl1pt2","path":"rooms/lvl1pt2/lvl1pt2.yy",},},
     {"id":{"name":"room_base","path":"rooms/room_base/room_base.yy",},},
     {"id":{"name":"room_ground_test","path":"rooms/room_ground_test/room_ground_test.yy",},},
     {"id":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
@@ -537,6 +538,7 @@
     {"roomId":{"name":"room_level_4_entrance","path":"rooms/room_level_4_entrance/room_level_4_entrance.yy",},},
     {"roomId":{"name":"room_level_4_wire_1","path":"rooms/room_level_4_wire_1/room_level_4_wire_1.yy",},},
     {"roomId":{"name":"room_level_4_boss","path":"rooms/room_level_4_boss/room_level_4_boss.yy",},},
+    {"roomId":{"name":"lvl1pt2","path":"rooms/lvl1pt2/lvl1pt2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

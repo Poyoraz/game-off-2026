@@ -126,6 +126,7 @@
     {"name":"prt_stars","order":17,"path":"particles/prt_stars/prt_stars.yy",},
     {"name":"path_curve","order":1,"path":"paths/path_curve/path_curve.yy",},
     {"name":"lvl1","order":2,"path":"rooms/lvl1/lvl1.yy",},
+    {"name":"lvl1pt2","order":3,"path":"rooms/lvl1pt2/lvl1pt2.yy",},
     {"name":"room_base","order":12,"path":"rooms/room_base/room_base.yy",},
     {"name":"room_level_4_wire_1","order":1,"path":"rooms/room_level_4_wire_1/room_level_4_wire_1.yy",},
     {"name":"room_wall_test","order":7,"path":"rooms/room_wall_test/room_wall_test.yy",},
