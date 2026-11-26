@@ -13,10 +13,7 @@ interact = function(this) {
 	if(!this.has_bomb_box) return;
 	if(instance_exists(obj_bomb)) return;
 	
-	obj_player.x = x
-	obj_player.y = y + 128
-	
-	var _block = instance_create_depth(x, y, obj_player.depth - 1, obj_bomb)
+	var _block = instance_create_depth(x, y + 128, obj_player.depth - 1, obj_bomb)
 		
-	obj_player.set_bash(_block)
+	obj_player.set_bash(_block, true)
 }

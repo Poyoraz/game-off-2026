@@ -67,7 +67,7 @@ on_collide = method(self, function(collidee, vertical = false) {
 
 on_grapple_pull = method(self, function(force, dir) {
 	if(is_bashable) {
-		obj_player.set_bash(self)
+		obj_player.set_bash(self, tp_to_while_bashing)
 		
 		return
 	}

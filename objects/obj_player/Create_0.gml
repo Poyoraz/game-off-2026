@@ -44,6 +44,7 @@ dash_cooldown = 0
 #region Bashing
 bashing = noone
 hook_bash = false
+bash_initialized = false
 #endregion
 
 #region UI
@@ -224,12 +225,12 @@ warp = method(self, function(goal_x, goal_y, traceback = false) {
 #endregion
 
 #region Bash Methods
-set_bash = method(self, function(item) {
+set_bash = method(self, function(item, tp_to_while_bashing = false) {
 	item.disable_physics()
 	
 	if(object_is_ancestor(item.object_index, obj_hookable_area) || item.object_index == obj_hookable_area) {
-		x = item.x + lengthdir_x(75, item.x)
-		y = item.y + lengthdir_y(75, item.y)
+		x = item.x + lengthdir_x(75, item.direction)
+		y = item.y + lengthdir_y(75, item.direction)
 		
 		hook_bash = true
 	} else {
@@ -237,7 +238,7 @@ set_bash = method(self, function(item) {
 		item.x = room_width + 500
 		item.visible = false
 		
-		if(item.tp_to_while_bashing) {
+		if(tp_to_while_bashing) {
 			warp(
 				item.xprevious,
 				item.yprevious,
@@ -254,9 +255,14 @@ set_bash = method(self, function(item) {
 	
 	vertical_speed = 0
 	horizontal_speed = 0
+	
+	bash_initialized = false 
+	alarm[1] = 1
 })
 
 bash = method(self, function(dir) {
+	if(!bash_initialized) return;
+	
 	enable_controls()
 	enable_gravity()
 	

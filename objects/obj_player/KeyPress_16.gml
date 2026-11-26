@@ -2,6 +2,13 @@ if(controls_disabled) exit
 
 if(instance_exists(obj_hook)) {
 	if(obj_hook.grappled) {
+		if(obj_hook.grappled.is_bashable) {
+			set_bash(obj_hook.grappled, true)
+			instance_destroy(obj_hook)
+			
+			return
+		}
+		
 		warp(obj_hook.x, obj_hook.y, true)
 	
 		instance_destroy(obj_hook)

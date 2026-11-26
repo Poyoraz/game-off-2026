@@ -1,3 +1,5 @@
+if(!__initialized) exit
+
 if(instance_exists(grappled)) {
 	if(grappled.weight == infinity) {
 		obj_player.warp(x, y, true)

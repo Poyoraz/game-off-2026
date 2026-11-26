@@ -49,3 +49,6 @@ fail_hook = function() {
 	)
 	instance_destroy()
 }
+
+__initialized = false
+alarm[0] = 1

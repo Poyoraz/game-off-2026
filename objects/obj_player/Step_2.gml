@@ -64,7 +64,7 @@ if(keyboard_check(vk_space) && !controls_disabled) {
 	}
 }
 
-if(keyboard_check_pressed(vk_space)) {
+if(keyboard_check_pressed(vk_space) && !controls_disabled) {
 	if ((left_collision || right_collision) && vertical_speed >= 0) {
 		vertical_speed = jump_height+5
 		horizontal_speed = 30*(left_collision-right_collision)
