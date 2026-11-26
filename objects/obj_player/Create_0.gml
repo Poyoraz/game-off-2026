@@ -23,6 +23,7 @@ part_type = particle_get_info(prt_stars).emitters[0].parttype.ind
 
 #region Attacking and damage
 invincibility = 0
+disable_hook = false
 
 facing_left = false
 
@@ -298,6 +299,11 @@ bash = method(self, function(dir) {
 			y + lengthdir_y(75, dir)
 		)
 		
+		var _new_x = x,
+			_new_y = y
+			
+		y = room_height + 999
+		
 		bashing.x = _x
 		bashing.y = _y
 		
@@ -305,10 +311,13 @@ bash = method(self, function(dir) {
 		
 		with(bashing) {
 			scr_warp_object_with_collision(
-				other.x + lengthdir_x(-125, dir),
-				other.y + lengthdir_y(-125, dir)
+				_x + lengthdir_x(-100, dir),
+				_y + lengthdir_y(-100, dir)
 			)
 		}
+		
+		x = _new_x
+		y = _new_y
 			
 		bashing.transmit_momentum(_momentum_x * -5/8, false, TransmitMomentumType.BASH)
 		bashing.transmit_momentum(_momentum_y * -5/8, true, TransmitMomentumType.BASH)

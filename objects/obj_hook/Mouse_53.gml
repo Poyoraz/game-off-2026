@@ -1,5 +1,8 @@
 if(!__initialized) exit
 
+obj_player.disable_hook = true
+obj_player.alarm[2] = 1
+
 if(instance_exists(grappled)) {
 	if(grappled.weight == infinity) {
 		obj_player.warp(x, y, true)

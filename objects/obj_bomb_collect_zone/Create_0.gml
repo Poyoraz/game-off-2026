@@ -15,5 +15,8 @@ interact = function(this) {
 	
 	var _block = instance_create_depth(x, y + 128, obj_player.depth - 1, obj_bomb)
 		
+	obj_player.x = x
+	obj_player.y = y + 128
+		
 	obj_player.set_bash(_block, true)
 }

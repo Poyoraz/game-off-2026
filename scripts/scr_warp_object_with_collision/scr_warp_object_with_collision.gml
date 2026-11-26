@@ -3,7 +3,7 @@ function scr_warp_object_with_collision(goal_x, goal_y, trace_backwards = false)
 	
 	var _dir = (point_direction(x, y, goal_x, goal_y) + 360) mod 360
 	
-	static STEP_SIZE = 5
+	static STEP_SIZE = 2
 	
 	var _x_step = lengthdir_x(STEP_SIZE, _dir),
 		_y_step = lengthdir_y(STEP_SIZE, _dir)
@@ -50,7 +50,7 @@ function scr_warp_object_with_collision(goal_x, goal_y, trace_backwards = false)
 function _scr_warp_with_backwards_trace(goal_x, goal_y) {
 	var _dir = (point_direction(goal_x, goal_y, x, y) + 360) mod 360
 	
-	static STEP_SIZE = 5
+	static STEP_SIZE = 2
 	
 	var _x_step = lengthdir_x(STEP_SIZE, _dir),
 		_y_step = lengthdir_y(STEP_SIZE, _dir)
