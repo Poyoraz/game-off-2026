@@ -1,0 +1,1 @@
+zoom_level = 2

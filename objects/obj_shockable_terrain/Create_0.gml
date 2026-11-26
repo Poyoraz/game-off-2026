@@ -5,7 +5,7 @@ on_grapple_hook = method(self, function() {
 	if(shock_enabled) {
 		obj_player.damage()
 	
-		return noone	
+		return noone
 	}
 	
 	_terrain_on_grapple_hook()

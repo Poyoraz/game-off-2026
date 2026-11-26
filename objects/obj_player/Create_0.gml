@@ -286,8 +286,8 @@ bash = method(self, function(dir) {
 		var _x = x, _y = y
 		
 		warp(
-			x + lengthdir_x(50, dir),
-			y + lengthdir_y(50, dir)
+			x + lengthdir_x(75, dir),
+			y + lengthdir_y(75, dir)
 		)
 		
 		bashing.x = _x

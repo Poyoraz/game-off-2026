@@ -24,15 +24,15 @@
   "name":"spr_reinforced_block",
   "nineSlice":{
     "$GMNineSliceData":"",
-    "bottom":10,
+    "bottom":11,
     "enabled":true,
     "guideColour":[4294902015,4294902015,4294902015,4294902015,],
     "highlightColour":1728023040,
     "highlightStyle":0,
-    "left":10,
+    "left":11,
     "resourceType":"GMNineSliceData",
     "resourceVersion":"2.0",
-    "right":10,
+    "right":11,
     "tileMode":[
       0,
       0,
@@ -40,7 +40,7 @@
       0,
       0,
     ],
-    "top":10,
+    "top":11,
   },
   "origin":4,
   "parent":{
