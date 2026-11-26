@@ -3,7 +3,6 @@ event_inherited()
 follow_buffer = 30 // slight buffer to prevent jitter when at follow distance
 move_dir = 0
 
-
 brain = noone
 current_state = EnemyStates.NONE
 

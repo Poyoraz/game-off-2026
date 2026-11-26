@@ -1,8 +1,12 @@
 // Inherit the parent event
 event_inherited();
 
-brain.tick(self)
-weapon.tick(self)
+brain_disabled_timer--
+
+if(brain_disabled_timer < 0) {
+	brain.tick(self)
+	weapon.tick(self)
+}
 
 if(mouse_on_enemy) {
 	ui_transparency = scr_ease_value(ui_transparency, 100, 7)

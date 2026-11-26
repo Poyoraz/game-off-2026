@@ -51,6 +51,7 @@
     {"$GMObjectProperty":"v2","%Name":"death_sound","filters":[
         "GMSound",
       ],"listItems":[],"multiselect":false,"name":"death_sound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_explosion_rumble","path":"sounds/snd_explosion_rumble/snd_explosion_rumble.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_explosion_rumble","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"brain_disabled_timer","filters":[],"listItems":[],"multiselect":false,"name":"brain_disabled_timer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
