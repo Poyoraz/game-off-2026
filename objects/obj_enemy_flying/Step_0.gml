@@ -1,7 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-if (!controls_disabled) {
+if (!controls_disabled && brain_disabled_timer < 0) {
 	if(move_dir != 0) {
 		var h_dir = sign(horizontal_speed),
 			h_abs = abs(horizontal_speed)

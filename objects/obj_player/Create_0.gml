@@ -102,6 +102,9 @@ attack = method(self, function(target, attack_power, _momentum_x, _momentum_y, h
 			part_type,
 			hit_lag + 5
 		)
+		
+		target.brain_disabled_timer = 30
+		show_debug_message(target.brain_disabled_timer)
 	
 		target.hit_lag = hit_lag
 	}

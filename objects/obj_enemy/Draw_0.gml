@@ -14,6 +14,8 @@ draw_sprite_ext(
 
 weapon.draw(self)
 
+draw_text_scribble(x, y, $"[fnt_large][c_black]{brain_disabled_timer}")
+
 if(instance_exists(projector)) {
 	draw_set_colour(__projector_blocked ? c_red : c_lime)
 	

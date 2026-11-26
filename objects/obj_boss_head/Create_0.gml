@@ -3,8 +3,12 @@ event_inherited()
 boss_phase_items = []
 
 current_phase = -1
+last_phase = 0
 
 increment_phase = method(self, function() {
+	instance_destroy(obj_enemy)
+	instance_destroy(obj_bullet)
+	
 	if(current_phase > -1) {
 		var _current_phase_items = boss_phase_items[current_phase],
 			_current_phase_item_count = array_length(_current_phase_items)
@@ -17,9 +21,24 @@ increment_phase = method(self, function() {
 			instance_destroy(_item)
 		}
 	
-		obj_player.warp(room_width / 2, room_height / 2, true)
+		if(instance_exists(obj_player_location_marker)) {
+			obj_player.warp(
+				obj_player_location_marker.x, 
+				obj_player_location_marker.y, 
+				true
+			)
+		} else {
+			obj_player.warp(room_width / 2, room_height / 2, true)
+		}
+		
 	}
+	
 	current_phase++
+	
+	if(last_phase == current_phase) {
+			
+		return
+	}
 	
 	var _next_phase_items = boss_phase_items[current_phase],
 		_next_phase_item_count = array_length(_next_phase_items)
