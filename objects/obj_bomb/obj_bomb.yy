@@ -9,7 +9,9 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},"propertyId":{"name":"grav","path":"objects/obj_collidable/obj_collidable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_physics_item","path":"objects/obj_physics_item/obj_physics_item.yy",},"propertyId":{"name":"air_drag","path":"objects/obj_physics_item/obj_physics_item.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},"propertyId":{"name":"weight","path":"objects/obj_collidable/obj_collidable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.25",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},"propertyId":{"name":"weight","path":"objects/obj_collidable/obj_collidable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.5",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_physics_item","path":"objects/obj_physics_item/obj_physics_item.yy",},"propertyId":{"name":"vertical_speed_max","path":"objects/obj_physics_item/obj_physics_item.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"infinity",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_physics_item","path":"objects/obj_physics_item/obj_physics_item.yy",},"propertyId":{"name":"horizontal_speed_max","path":"objects/obj_physics_item/obj_physics_item.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"infinity",},
   ],
   "parent":{
     "name":"Boss",

@@ -20,4 +20,8 @@ on_collide = method(self, function(collidee) {
 	ds_list_destroy(_list)
 	
 	instance_destroy()
+	
+	if(collidee == obj_boss_head.id) {
+		obj_boss_head.increment_phase()
+	}
 })
