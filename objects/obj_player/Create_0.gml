@@ -246,6 +246,8 @@ set_bash = method(self, function(item, tp_to_while_bashing = false) {
 			)
 		}
 		
+		item.brain_disabled_timer = 120
+		
 	}
 	
 	bashing = item
