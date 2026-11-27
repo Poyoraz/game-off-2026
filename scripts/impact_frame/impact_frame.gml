@@ -13,10 +13,10 @@ function impact_frame(duration){
 				return true
 			},
 			function() {
-				layer_set_fx("Instances", boss_impact_frame.DARKEN_EFFECT)
-				layer_set_fx("Player", boss_impact_frame.DARKEN_EFFECT)
-				layer_set_fx("Background", boss_impact_frame.WHITEN_EFFECT)
-				layer_set_fx("ShakeLayer", boss_impact_frame.SHAKE_EFFECT)
+				layer_set_fx("Instances", impact_frame.DARKEN_EFFECT)
+				layer_set_fx("Player", impact_frame.DARKEN_EFFECT)
+				layer_set_fx("Background", impact_frame.WHITEN_EFFECT)
+				layer_set_fx("ShakeLayer", impact_frame.SHAKE_EFFECT)
 			},
 			function() {
 				layer_clear_fx("Instances")
