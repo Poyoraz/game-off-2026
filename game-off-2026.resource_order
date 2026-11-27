@@ -402,6 +402,7 @@
     {"name":"spr_hookable_area","order":1,"path":"sprites/spr_hookable_area/spr_hookable_area.yy",},
     {"name":"spr_impact_frame","order":15,"path":"sprites/spr_impact_frame/spr_impact_frame.yy",},
     {"name":"spr_interactable_area","order":1,"path":"sprites/spr_interactable_area/spr_interactable_area.yy",},
+    {"name":"spr_laser_alarm","order":18,"path":"sprites/spr_laser_alarm/spr_laser_alarm.yy",},
     {"name":"spr_laser","order":9,"path":"sprites/spr_laser/spr_laser.yy",},
     {"name":"spr_lava_box","order":3,"path":"sprites/spr_lava_box/spr_lava_box.yy",},
     {"name":"spr_level_transition","order":1,"path":"sprites/spr_level_transition/spr_level_transition.yy",},

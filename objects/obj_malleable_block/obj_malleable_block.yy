@@ -4,11 +4,13 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_malleable_block",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},"propertyId":{"name":"weight","path":"objects/obj_collidable/obj_collidable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.75",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_collidable","path":"objects/obj_collidable/obj_collidable.yy",},"propertyId":{"name":"grav","path":"objects/obj_collidable/obj_collidable.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
   ],
   "parent":{
     "name":"Terrain",

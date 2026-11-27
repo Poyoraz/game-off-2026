@@ -1,7 +1,7 @@
 function get_angle_from_input(h_input, v_input){
 	static DIRECTION_MAP = [
 		[135, 90, 45],
-		[180, 0,  0],
+		[180, undefined,  0],
 		[225, 270, 315]
 	]
 

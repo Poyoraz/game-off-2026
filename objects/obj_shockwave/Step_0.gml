@@ -26,4 +26,6 @@ for (var i = 0; i < _count; ++i) {
 
 if(!_hit_movable_item) {
 	if(--lifetime < 0) instance_destroy()
+} else {
+	lifetime = 10
 }

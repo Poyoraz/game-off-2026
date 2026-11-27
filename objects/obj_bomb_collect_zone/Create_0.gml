@@ -12,6 +12,7 @@ box_height = scrib.get_height()
 interact = function(this) {
 	if(!this.has_bomb_box) return;
 	if(instance_exists(obj_bomb)) return;
+	if(!scr_hook_head_attached()) return;
 	
 	var _block = instance_create_depth(x, y + 128, obj_player.depth - 1, obj_bomb)
 		

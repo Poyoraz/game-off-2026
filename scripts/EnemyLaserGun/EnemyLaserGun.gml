@@ -2,7 +2,7 @@ function EnemyLaserGun() : EnemyWeapon() constructor{
 	initial_cooldown = 400
 	
 	cooldown = initial_cooldown
-	range = 800
+	range = 1600
 	
 	laser_direction = 90
 
@@ -19,6 +19,14 @@ function EnemyLaserGun() : EnemyWeapon() constructor{
 			
 			if(cooldown == initial_cooldown) {
 				scr_play_sound(snd_robot_lock_on)
+			} else if(cooldown > 150) {
+				if(cooldown mod 60 == 0) scr_play_sound(snd_robot_lock_on)
+			} else if(cooldown > 100) {
+				if(cooldown mod 30 == 0) scr_play_sound(snd_robot_lock_on)
+			} else if(cooldown > 30) {
+				if(cooldown mod 15 == 0) scr_play_sound(snd_robot_lock_on)
+			} else {
+				if(cooldown mod 10 == 0) scr_play_sound(snd_robot_lock_on)
 			}
 		
 			cooldown--
@@ -50,7 +58,7 @@ function EnemyLaserGun() : EnemyWeapon() constructor{
 			var dir = laser_direction
 				
 			draw_sprite_ext(
-				spr_laser,
+				(cooldown < 90 && cooldown mod 10 < 3) ? spr_laser_alarm : spr_laser,
 				-1,
 				enemy.x,
 				enemy.y,

@@ -6,7 +6,6 @@ current_phase = -1
 last_phase = 0
 
 increment_phase = method(self, function() {
-	instance_destroy(obj_enemy)
 	instance_destroy(obj_bullet)
 	
 	if(current_phase > -1) {
@@ -19,16 +18,6 @@ increment_phase = method(self, function() {
 			if(!instance_exists(_item)) continue
 		
 			instance_destroy(_item)
-		}
-	
-		if(instance_exists(obj_player_location_marker)) {
-			obj_player.warp(
-				obj_player_location_marker.x, 
-				obj_player_location_marker.y, 
-				true
-			)
-		} else {
-			obj_player.warp(room_width / 2, room_height / 2, true)
 		}
 		
 	}
@@ -49,5 +38,15 @@ increment_phase = method(self, function() {
 	    var _item = _next_phase_items[i]
 		
 		instance_activate_object(_item)
+	}
+	
+	if(instance_exists(obj_player_location_marker)) {
+		obj_player.warp(
+			obj_player_location_marker.x, 
+			obj_player_location_marker.y, 
+			true
+		)
+	} else {
+		obj_player.warp(room_width / 2, room_height / 2, true)
 	}
 })

@@ -31,8 +31,8 @@ var _dir = get_angle_from_input(
 	held_down - held_up
 )
 
-if(_dir == 0 && facing_left) {
-	_dir = 180
+if(is_undefined(_dir)) {
+	_dir = facing_left ? 180 : 0
 }
 
 facing_left = ((_dir + 450) mod 360 > 180)
