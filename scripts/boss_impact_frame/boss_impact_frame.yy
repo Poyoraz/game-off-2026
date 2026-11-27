@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"boss_impact_frame",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"boss_impact_frame",
+  "parent":{
+    "name":"Library",
+    "path":"folders/Library.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

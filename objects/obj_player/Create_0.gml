@@ -17,8 +17,8 @@ step_timer = 0
 #endregion
 
 #region Particle types
-star_sys = part_system_create(prt_stars)
 part_type = particle_get_info(prt_stars).emitters[0].parttype.ind
+star_sys = part_system_create_layer(layer, false)
 #endregion
 
 #region Attacking and damage
@@ -104,7 +104,6 @@ attack = method(self, function(target, attack_power, _momentum_x, _momentum_y, h
 		)
 		
 		target.brain_disabled_timer = 30
-		show_debug_message(target.brain_disabled_timer)
 	
 		target.hit_lag = hit_lag
 	}

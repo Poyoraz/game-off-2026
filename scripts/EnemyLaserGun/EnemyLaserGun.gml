@@ -39,9 +39,6 @@ function EnemyLaserGun() : EnemyWeapon() constructor{
 				
 				var _player = collision_line(enemy.x, enemy.y, _x_goal, _y_goal, obj_player, false, true)
 				
-				show_debug_message([enemy.x, enemy.y, _x_goal, _y_goal])
-				show_debug_message(_player)
-				
 				if(instance_exists(_player)) {
 					_player.damage()
 				}

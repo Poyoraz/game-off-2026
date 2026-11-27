@@ -13,41 +13,17 @@ function impact_frame(duration){
 				return true
 			},
 			function() {
-				layer_set_fx("Instances", impact_frame.DARKEN_EFFECT)
+				layer_set_fx("Instances", boss_impact_frame.DARKEN_EFFECT)
+				layer_set_fx("Player", boss_impact_frame.DARKEN_EFFECT)
+				layer_set_fx("Background", boss_impact_frame.WHITEN_EFFECT)
+				layer_set_fx("ShakeLayer", boss_impact_frame.SHAKE_EFFECT)
 			},
 			function() {
 				layer_clear_fx("Instances")
-			}
-		),
-		new BaseAnimation(
-			function() {
-			},
-			function() {
-				return true
-			},
-			function() {
-				layer_set_fx("Background", impact_frame.WHITEN_EFFECT)
-			},
-			function() {
+				layer_clear_fx("Player")
 				layer_clear_fx("Background")
+				layer_clear_fx("ShakeLayer")
 			}
-		),
+		)
 	])
-}
-
-function __get_whiten_fx() {
-	var _fx = fx_create("_filter_contrast")
-	fx_set_parameter(_fx, "g_ContrastIntensity", 2)
-	fx_set_parameter(_fx, "g_ContrastBrightness", 2)
-	fx_set_single_layer(_fx, true)
-	
-	return _fx
-}
-
-function __get_darken_fx() {
-	var _fx = fx_create("_filter_tintfilter")
-	fx_set_parameter(_fx, "g_TintCol", [0, 0, 0, 1])
-	fx_set_single_layer(_fx, true)
-	
-	return _fx
 }

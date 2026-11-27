@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_13_5_resample",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":16.830635,
+  "exportDir":"",
+  "name":"snd_13_5_resample",
+  "parent":{
+    "name":"Chargeup",
+    "path":"folders/Levels/Level 4/Boss/Chargeup.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_13_5_resample.wav",
+  "volume":1.0,
+}

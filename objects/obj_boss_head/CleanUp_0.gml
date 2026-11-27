@@ -1,0 +1,2 @@
+ds_list_destroy(shockwave_list)
+part_system_destroy(part_sys)

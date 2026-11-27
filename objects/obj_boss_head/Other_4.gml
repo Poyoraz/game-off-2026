@@ -8,4 +8,4 @@ for (var i = 0; i < last_phase; ++i) {
 	}
 }
 
-increment_phase()
+start_new_phase()

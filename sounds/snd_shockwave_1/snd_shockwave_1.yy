@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_shockwave_1",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":2.8963718,
+  "exportDir":"",
+  "name":"snd_shockwave_1",
+  "parent":{
+    "name":"Shockwave Sounds",
+    "path":"folders/Levels/Level 4/Boss/Shockwave Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_shockwave_1.wav",
+  "volume":1.0,
+}

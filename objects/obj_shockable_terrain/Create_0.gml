@@ -27,6 +27,12 @@ disable_shock = method(self, function() {
 })
 
 enable_shock = method(self, function() {
+	scr_play_sound(
+		choose(
+			snd_shock_1,
+			snd_shock_2
+		)
+	)
 	shock_enabled = true
 	image_blend = c_blue
 })

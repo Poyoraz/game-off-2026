@@ -3,7 +3,7 @@ event_inherited()
 
 _physics_item_on_collide = on_collide
 
-invincibility = 12
+invincibility = 0
 
 on_collide = method(self, function(collidee, vertical = false) {
 	if(collidee.object_index == obj_enemy || object_is_ancestor(collidee.object_index, obj_enemy)) {
