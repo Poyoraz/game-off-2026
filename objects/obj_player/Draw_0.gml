@@ -1,12 +1,14 @@
 image_alpha = invincibility > 0 ? 0.8 : 1
 
+var _spr_ = get_sprite()
+
 draw_sprite_ext(
-	sprite_index,
-	image_index,
+	_spr_[0],
+	_spr_[1],
 	x,
 	y,
-	facing_left ? -1 : 1,
-	1,
+	facing_left ? -0.68 : 0.68,
+	0.68,
 	direction,
 	image_blend,
 	image_alpha

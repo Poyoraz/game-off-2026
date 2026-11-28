@@ -13,13 +13,14 @@ if(!_prev_bottom_collision && bottom_collision) {
 	)
 	
 	scr_play_sound(snd_land)
+	
+	attack_combo_counter = 0
 }
 
 if (bottom_collision && jump_buffer > 0) {
 	vertical_speed = jump_height
 	inaction_timer = 0
 	
-	attack_combo_counter = 0
 	alarm[11] = 0
 	
 	part_particles_create(
@@ -44,7 +45,6 @@ if(keyboard_check(vk_space) && !controls_disabled) {
 	if (coyote_timer > 0) {
 		inaction_timer = 0
 	
-		attack_combo_counter = 0
 		alarm[11] = 0
 	
 		part_particles_create(

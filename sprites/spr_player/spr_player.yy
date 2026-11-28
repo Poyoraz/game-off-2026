@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":128,
+  "height":192,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"2b5f681e-bd60-4f44-aeeb-05b0d6ece220","blendMode":0,"displayName":"default","isLocked":false,"name":"2b5f681e-bd60-4f44-aeeb-05b0d6ece220","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -29,10 +29,10 @@
     "guideColour":[4294902015,4294902015,4294902015,4294902015,],
     "highlightColour":1728023040,
     "highlightStyle":0,
-    "left":10,
+    "left":0,
     "resourceType":"GMNineSliceData",
     "resourceVersion":"2.0",
-    "right":10,
+    "right":3,
     "tileMode":[
       0,
       0,
@@ -42,7 +42,7 @@
     ],
     "top":10,
   },
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Player",
     "path":"folders/Player.yy",
@@ -94,8 +94,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":32,
-    "yorigin":64,
+    "xorigin":47,
+    "yorigin":95,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -105,5 +105,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":96,
 }

@@ -227,6 +227,19 @@ warp = method(self, function(goal_x, goal_y, traceback = false) {
 })
 #endregion
 
+#region Sprite Methods
+get_sprite = method(self, function() {
+	if(attack_combo_counter == 1) {
+		return [spr_attack_swipe_1, min(20 - alarm[11], 9)]
+	} else if(attack_combo_counter == 2) {
+		return [spr_attack_swipe_2, min(8 - alarm[11], 9)]
+	}
+	
+	
+	return [spr_player_idle, floor((current_time % 1500) / 750) ]
+})
+#endregion
+
 #region Bash Methods
 set_bash = method(self, function(item, tp_to_while_bashing = false) {
 	item.disable_physics()

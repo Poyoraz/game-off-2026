@@ -56,7 +56,7 @@ if(bottom_collision) {
 		
 		ds_list_destroy(_list)
 		
-		alarm[11] = 20
+		alarm[11] = 25
 		#endregion
 	} else if(attack_combo_counter == 1) {	
 		#region SECOND SWING
@@ -169,6 +169,8 @@ if(bottom_collision) {
 	scr_play_sound(_collision_count > 0 ? snd_heavy_hit : snd_heavy_miss)
 		
 	ds_list_destroy(_list)
+	
+	attack_combo_counter = 3
 		
 	alarm[11] = 30
 	#endregion
